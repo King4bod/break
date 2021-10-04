@@ -1,0 +1,112 @@
+
+ul {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+ 
+  
+  li a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  li p {
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+  }
+
+   img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3%;
+    height: 3%;
+  }
+
+body {
+    background-color: rgba(143, 143, 143, 0.459);
+}
+
+#co {
+  float: left;
+  width: 300px;
+  border: 30px solid #333;
+  padding: 50px;
+  padding-right: 300px;
+  padding-bottom: 300px;
+  margin: 10px;
+  color: white;
+  background-color: #333;
+  background-image: url(استراحة.jpg);
+  text-align:center ;
+}
+
+#co2 {
+  display: block;
+  float: right;
+  width: 300px;
+  border: 30px dotted pink;
+  padding: 50px;
+  padding-right: 300px;
+  padding-bottom: 300px;
+  margin: 10px;
+  color: white;
+  background-color: #333;
+  background-image: url(استراحة2.jpg);
+  text-align: center;
+}
+#co3 {
+  float: left;
+  width: 300px;
+  border: 30px outset rgb(49, 5, 172);
+  padding: 50px;
+  padding-right: 300px;
+  padding-bottom: 300px;
+  margin: 10px;
+  color: white;
+  background-color: #333;
+  background-image: url(استراحة3.jpg);
+  text-align:center ;
+}
+#co4 {
+  float: right;
+  width: 300px;
+  border: 30px groove rgb(87, 69, 136);
+  padding: 50px;
+  padding-right: 300px;
+  padding-bottom: 300px;
+  margin: 10px;
+  color: white;
+  background-color: #333;
+  background-image: url(استراحة4.jpg);
+  text-align: center;
+  align-content: center;
+}
+a {
+  color: white;
+}
+/*
+padding-right: 500px;
+
+padding-left: 250px;
+
+*/

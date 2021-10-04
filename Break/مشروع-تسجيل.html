@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+
+   </title>
+    <link rel="stylesheet" href="مشروع.css">
+  </head>
+  <body>
+            <h1> New Account </h1>
+          <div class="panel-body">
+            <form action="sql.php" method="post">
+                <label for="firstName"> First name</label> <!--الاسم الاول-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+                <br>
+                <label for="lastName"> last name </label> <!--الأسم الأخير-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+                <br> 
+                <label for="Type1">Type</label> <!--نوع الحساب-->
+                <br>
+                  <label for="Client" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="Type1"
+                      value="m"
+                      id="Client"
+                    />Client</label>
+                <br>
+                  <label for="Type2" class="radio-inline" 
+                    ><input
+                      type="radio"
+                      name="Type2"
+                      value="f"
+                      id="lessor"
+                    />lessor</label>
+                  <br>
+                <label for="email">Email </label> <!--البريد الألكتوني-->
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                />
+                <br>
+                <label for="password">Password </label> <!--كلمة المرور-->
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                />
+                <br>
+                <label for="number"> Phone number </label> <!--رقم الجوال-->
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                />
+                
+              <input type="submit"/>
+            </form> 
+  </body>
+</html>
