@@ -48,7 +48,8 @@ body {
 
 #co {
   float: left;
-  width: 300px;
+  width: 350px;
+  height: 350px;
   border: 30px solid #333;
   padding: 50px;
   padding-right: 300px;
@@ -63,7 +64,8 @@ body {
 #co2 {
   display: block;
   float: right;
-  width: 300px;
+  width: 350px;
+  height: 350px;
   border: 30px dotted pink;
   padding: 50px;
   padding-right: 300px;
@@ -76,11 +78,12 @@ body {
 }
 #co3 {
   float: left;
-  width: 300px;
+  width: 350px;
+  height: 350px;
   border: 30px outset rgb(49, 5, 172);
   padding: 50px;
-  padding-right: 300px;
-  padding-bottom: 300px;
+  padding-right: 350px;
+  padding-bottom: 350px;
   margin: 10px;
   color: white;
   background-color: #333;
@@ -89,11 +92,12 @@ body {
 }
 #co4 {
   float: right;
-  width: 300px;
+  width: 350px;
+  height: 350px;
   border: 30px groove rgb(87, 69, 136);
   padding: 50px;
-  padding-right: 300px;
-  padding-bottom: 300px;
+  padding-right: 350px;
+  padding-bottom: 350px;
   margin: 10px;
   color: white;
   background-color: #333;
