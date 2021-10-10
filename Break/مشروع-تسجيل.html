@@ -4,66 +4,72 @@
     <title>
 
    </title>
-    <link rel="stylesheet" href="مشروع.css">
+   <!--CSS bot-->
+   <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+   <link rel="stylesheet" href="مشروع.css">
   </head>
   <body>
-            <h1> New Account </h1>
+            <h1> النشاء الحساب </h1>
           <div class="panel-body">
             <form action="sql.php" method="post">
-                <label for="firstName"> First name</label> <!--الاسم الاول-->
+                <label for="firstName"> الاسم الاول</label> <!--الاسم الاول-->
                 <input
-                  type="text"
+           
+                type="text"
                   class="form-control"
                   id="firstName"
                   name="firstName"
-                />
+                  placeholder="your Name"
+                 
+                  />
                 <br>
-                <label for="lastName"> last name </label> <!--الأسم الأخير-->
+                <label for="lastName">  الأسم الخير</label> <!--الأسم الأخير-->
                 <input
                   type="text"
                   class="form-control"
                   id="lastName"
                   name="lastName"
-                />
+                  placeholder="your lastName"
+                  />
                 <br> 
-                <label for="Type1">Type</label> <!--نوع الحساب-->
+                <label for="Type1">النوع</label> <!--نوع الحساب-->
                 <br>
-                  <label for="Client" class="radio-inline"
-                    ><input
-                      type="radio"
-                      name="Type1"
-                      value="m"
-                      id="Client"
-                    />Client</label>
-                <br>
-                  <label for="Type2" class="radio-inline" 
-                    ><input
-                      type="radio"
-                      name="Type2"
-                      value="f"
-                      id="lessor"
-                    />lessor</label>
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>نوع حسابك</option>
+                  <option value="1">مؤجر</option>
+                  <option value="2">مستاجر</option>
+                
+                </select>
+                <label for="floatingSelect"></label>
                   <br>
-                <label for="email">Email </label> <!--البريد الألكتوني-->
+                <label for="email">البريد الألكتروني </label> <!--البريد الألكتوني-->
                 <input
                   type="text"
                   id="email"
                   name="email"
-                />
+                  placeholder="name@example.com"
+                  />
+               
                 <br>
-                <label for="password">Password </label> <!--كلمة المرور-->
+
+                <label for="password">كلمة المرور </label> <!--كلمة المرور-->
                 <input
                   type="password"
                   id="password"
                   name="password"
-                />
+                  placeholder="password"
+               
+                  />
+               
                 <br>
-                <label for="number"> Phone number </label> <!--رقم الجوال-->
+                <label for="number"> رقم الجوال </label> <!--رقم الجوال-->
                 <input
                   type="number"
                   id="number"
                   name="number"
-                />
+                  placeholder="+966 5..."
+                  />
                 
               <input type="submit"/>
             </form> 
