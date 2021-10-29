@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+
+    </title>Add-resravtion</title>
+    <link rel="stylesheet" href="..//css/Break1.css">
+  </head>
+  <body>
+            <h1> Add-resravtion</h1>
+          <div class="panel-body">
+            <form action="..//php/Add-resrvation.php" method="post">
+                <label for="Name"> Break name</label> 
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                />
+                <br>
+                <label for="Location">Location </label> 
+                <input
+                  type="text"
+                  id="Location"
+                  name="Location"
+                />
+                <br> 
+                <label name ="Stats">pool</label> 
+                <br>
+                  <label for="Stats" 
+                    ><input
+                      type="checkbox"
+                      name="pool"
+                      value="Yes"
+                      id="pool"
+                    />Yes
+                    <input
+                    type="checkbox"
+                    name="pool"
+                    value="No"
+                    id="pool"
+                  />No</label>
+                <br>
+                <label for="Price"> Price per day </label>
+                <input
+                  type="number"
+                  id="price"
+                  name="Price"
+                />
+                <br>
+                <label for="Number"> Phone number </label> 
+                <input
+                  type="number"
+                  id="Number"
+                  name="Number"
+                />
+                
+              <input type="submit"/>
+            </form> 
+  </body>
+</html>
