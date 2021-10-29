@@ -46,6 +46,7 @@ body {
     background-color: rgba(143, 143, 143, 0.459);
 }
 
+<<<<<<< HEAD:css/Break2.css
 #co {
   float: left;
   width: 350px;
@@ -106,6 +107,9 @@ body {
   align-content: center;
   /* test */
 }
+=======
+
+>>>>>>> 9183b507faa1760970251dd6c6499f94dbfdb279:css/2مشروع.css
 a {
   color: white;
 }
