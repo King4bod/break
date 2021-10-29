@@ -9,7 +9,7 @@
   <body>
             <h1> Add-resravtion</h1>
           <div class="panel-body">
-            <form action="..//php/Add-resrvation.php" method="post">
+            <form action="sql.php" method="post">
                 <label for="Name"> Break name</label> 
                 <input
                   type="text"
@@ -24,21 +24,30 @@
                   name="Location"
                 />
                 <br> 
-                <label name ="Stats">pool</label> 
+                <label for="Stats">Stats</label> 
                 <br>
-                  <label for="Stats" 
+                  <label for="pool" 
                     ><input
                       type="checkbox"
                       name="pool"
-                      value="Yes"
+                      value="pool"
                       id="pool"
-                    />Yes
-                    <input
+                    />Pool</label>
+                <br>
+                  <label for="football pitch" 
+                    ><input
+                      type="checkbox"
+                      name="football pitch"
+                      value="football pitch"
+                      id="football pitch"
+                    />Football pitch</label>
+                  <br>
+                  <label for="tent" 
+                  ><input
                     type="checkbox"
-                    name="pool"
-                    value="No"
-                    id="pool"
-                  />No</label>
+                    name="tent"
+                    value="tent"
+                  />Tent</label>
                 <br>
                 <label for="Price"> Price per day </label>
                 <input

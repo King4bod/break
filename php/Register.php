@@ -7,7 +7,11 @@
 	$number = $_POST['number'];
 
 	// Database connection
+<<<<<<< HEAD
 	$conn = new mysqli('localhost','root','','mydatabase');
+=======
+	$conn = new mysqli('localhost','root','','Break');
+>>>>>>> 9183b507faa1760970251dd6c6499f94dbfdb279
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
@@ -20,6 +24,7 @@
 	//	echo "Registration successfully...";
 		$stmt->close();
 		$conn->close();
+<<<<<<< HEAD
 		session_start();
 		$_SESSION["name"] = $firstName;
 	//	$_SESSION["last"] = $lastName;
@@ -28,6 +33,10 @@
 
 	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
 		header("Location: ../html/Break-main.php");
+=======
+	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
+		header("Location: ../html/Break-main.html");
+>>>>>>> 9183b507faa1760970251dd6c6499f94dbfdb279
 		exit();
 	}
 	?>
