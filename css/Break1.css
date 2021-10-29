@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(226, 217, 204);
+ 
+ 
+ 
+ 
+   }
+ 
+   
+ h1 {
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: rgb(161, 123, 16);
+ }
+ 
+
+
+h1{
+color: rgb(68, 65, 63);
+text-shadow: 2px 2px 5px rgb(68, 65, 65);
+text-indent: -20px;
+}
+
+
+ body{
+background-image: url(backger.png);
+background-repeat: repeat-x;
+
+}
+  
+ 
+ 
+   div {
+     background-color: rgba(206, 206, 206, 0.699);
+    
+     width: 300px;
+     border: 15px solid rgb(98, 98, 98);
+     padding: 50px;
+ position: relative;
+ left: 799px;
+   border-style: solid;
+   border-radius: 30px;
+     text-shadow: 2px 2px 5px rgb(68, 65, 65);
+     display: inline-block;  
+  
+   
+    
+     
+   
+    
+   }
+   
+   
+   button {
+ 
+    position: relative;
+    left: 30px;
+    width: 100px;
+   
+  
+  }
