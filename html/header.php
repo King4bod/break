@@ -22,12 +22,24 @@
     <img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" >
   <ul>
     <li></li>
-    <li><a class="active" href="../html/Break-login.html">Login</a></li>
+    <li> <?php session_start(); if (isset($_SESSION['name'])) {
+        echo '<a class="active" href="../php/Logout.php">Log out</a>';
+    } else {
+      echo '<a class="active" href="../html/Break-login.html">Login</a>';
+    }?></li>
     <li><a href="../html/Break-register.html">Register</a></li>
     <li><a href="..//html/Add-resrvation.html">Add resrvation</a></li>
     <li><a href="s">Search</a></li>
     <!-- <li><p>Welcome to break resrvation</p></li> -->
-    
+    <li><p> 
+          <?php  if (isset($_SESSION['name'])) {
+        //echo "Hello Tariq";
+        echo  "Welcome ".$_SESSION['name'];
+         } else {
+        echo 'Welcome to Break';  
+       }
+         ?>
+         </p></li> 
   </ul>
   
 </nav>
