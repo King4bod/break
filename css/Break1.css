@@ -1,11 +1,4 @@
-body{
-    background-color: rgb(226, 217, 204);
- 
- 
- 
- 
-   }
- 
+
    
  h1 {
      text-align: center;
@@ -23,7 +16,7 @@ text-indent: -20px;
 
 
  body{
-background-image: url(backger.png);
+background-image: url(../image/backger.png);
 background-repeat: repeat-x;
 
 }
