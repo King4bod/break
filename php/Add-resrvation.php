@@ -1,7 +1,7 @@
 <?php
 	$Name = $_POST['Name'];
 	$Location = $_POST['Location'];
-	$Stats = $_POST['Stats'];
+	$pool = $_POST['pool'];
 	$Price = $_POST['Price'];
 	$Number = $_POST['Number'];
 	// Database connection
@@ -10,8 +10,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into reservations(first_name, last_name, type, email, password, number) values(?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssii", $Name, $Location, $Stats, $Price, $Number);
+		$stmt = $conn->prepare("insert into add-resravtion(id, break-name, location, stats, price, phone_number ) values(1, ?, ?, ?, ?,?)");
+		$stmt->bind_param("sssii", $Name, $Location, $pool, $Price, $Number);
 	    $stmt->execute();
 		//$stmt->store_result();
 		//echo $execval;
