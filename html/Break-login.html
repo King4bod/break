@@ -21,28 +21,31 @@
 <body>
   <br>
   <br>
-<div class="box">
-<h1> Login </h1>
+  
+  <h1> Login </h1>
+  <div class="box">
+           <!-- <img src="../image/break 44.png" width="150px" height="150px" class="logo-icon" >-->
       
             <form action="../php/Login.php" method="post">
                 <label for="email">Email </label> <!--البريد الألكتوني-->
-                <input
+                <input class="form-control"
                   type="text"
                  class="box"
                   id="email"
                   name="email"
                   placeholder="name@example.com"
                   />
-                <br>
+             
                 <label for="password">Password </label> <!--كلمة المرور-->
-                <input
+                <input class="form-control"
                   type="password"
                  class="box"
                   id="password"
                   name="password"
                   placeholder="password"
                   />
-              <input type="submit"/>
+                 <br>
+                  <button type="button" class="btn btn-warning">submit</button>
             </form>
        
   
