@@ -24,10 +24,11 @@
     <li></li>
     <li> <?php session_start(); if (isset($_SESSION['name'])) {
         echo '<a class="active" href="../php/Logout.php">Log out</a>';
+        
     } else {
-      echo '<a class="active" href="../html/Break-login.html">Login</a>';
-    }?></li>
-    <li><a href="../html/Break-register.html">Register</a></li>
+      echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
+      echo '<li><a href="../html/Break-register.html">Register</a></li> ';
+    }?>
     <li><a href="..//html/Add-resrvation.html">Add resrvation</a></li>
     <li><a href="s">Search</a></li>
     <!-- <li><p>Welcome to break resrvation</p></li> -->
