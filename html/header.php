@@ -18,7 +18,7 @@
    
   </head>
   <body>
-  <nav>
+  <nav class="bd">
     <img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" >
   <ul>
     <li></li>
@@ -31,13 +31,13 @@
     }?>
     <li><a href="..//html/Add-resrvation.html">Add resrvation</a></li>
     <li><a href="s">Search</a></li>
-
+<li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li>
     <li><p> 
           <?php  if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
         echo  "Welcome ".$_SESSION['name'];
          } else {
-        echo 'Welcome to Break';  
+        echo '';  
        }
          ?></p></li>
     <!-- <li><p>Welcome to break resrvation</p></li> -->
