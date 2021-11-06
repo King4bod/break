@@ -1,7 +1,7 @@
 <?php
-	$Name = $_POST['Name'];
+    $id =$_POST['id'];
+	$break_name =$_POST['break_name'];
 	$Location = $_POST['Location'];
-	$pool = $_POST['pool'];
 	$Price = $_POST['Price'];
 	$Number = $_POST['Number'];
 	// Database connection
@@ -10,8 +10,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into add-resravtion(id, break-name, location, stats, price, phone_number ) values(1, ?, ?, ?, ?,?)");
-		$stmt->bind_param("sssii", $Name, $Location, $pool, $Price, $Number);
+		$stmt = $conn->prepare("insert into add_resravtion(id, break_name, location, price, phone_number ) values(?, ?, ?, ?, ?)");
+		$stmt->bind_param("issii", $id,$break_name ,$Location, $Price, $Number);
 	    $stmt->execute();
 		//$stmt->store_result();
 		//echo $execval;
@@ -19,7 +19,7 @@
 		$stmt->close();
 		$conn->close();
 	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
-		header("Location: ../html/Break-main.html");
+		header("Location: ../html/index.php");
 		exit();
 	}
 	?>

@@ -23,10 +23,12 @@
   <ul>
     <li></li>
     <li> <?php session_start(); if (isset($_SESSION['name'])) {
-      echo '<a class="active" href="../php/Logout.php">Log out</a>';
-  } else {
-    echo '<a class="active" href="../html/Break-login.html">Login</a>';
-  }?></li>    <li><a href="../html/Break-register.html">Register</a></li>
+        echo '<a class="active" href="../php/Logout.php">Log out</a>';
+        
+    } else {
+      echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
+      echo '<li><a href="../html/Break-register.html">Register</a></li> ';
+    }?>
     <li><a href="..//html/Add-resrvation.html">Add resrvation</a></li>
     <li><a href="s">Search</a></li>
 
@@ -39,7 +41,15 @@
        }
          ?></p></li>
     <!-- <li><p>Welcome to break resrvation</p></li> -->
-    
+    <li><p> 
+          <?php  if (isset($_SESSION['name'])) {
+        //echo "Hello Tariq";
+        echo  "Welcome ".$_SESSION['name'];
+         } else {
+        echo 'Welcome to Break';  
+       }
+         ?>
+         </p></li> 
   </ul>
   
 </nav>
