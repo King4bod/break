@@ -25,7 +25,7 @@ session_start();
           $data = $stmt_result->fetch_assoc();
 
        if($data['password']=== $password){
-		header("Location: ../html/Break-main.php");
+		header("Location: ../html/index.php");
   //  echo "<h1> Your First name is : </h1>" . $_SESSION["name"] ."<br>" ;
    // echo "<h1>Your Last name is  : </h1>" . $_SESSION["last"]  ;
 

@@ -10,7 +10,7 @@
   </head>
   <body>
 
-  <?php require "header.html" ?>
+  <?php require "header.php" ?>
 
     <div class="backg">
     <div class="row row-cols-1 row-cols-md-3 g-4">
