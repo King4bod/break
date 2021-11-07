@@ -29,7 +29,7 @@
       echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
       echo '<li><a href="../html/Break-register.html">Register</a></li> ';
     }?>
-    <li><a href="..//html/Add-resrvation.html">Add resrvation</a></li>
+    <li><a href="..//html/Add-resrvation.php">Add resrvation</a></li>
     <li><a href="s">Search</a></li>
 <li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li>
     <li><p style="color:white"> 
