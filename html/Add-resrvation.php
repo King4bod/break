@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>
-
+<?php include "header.php";?>
     </title>Add-resravtion</title>
     <link rel="stylesheet" href="..//css/Break1.css">
+
   </head>
   <body>
             <h1> Add-resravtion</h1>
