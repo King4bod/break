@@ -2,18 +2,16 @@
    
  
    
- h1 {
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(161, 123, 16);
-}
-
+ 
 
 
 h1{
-color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  color: rgb(0, 0, 0);
 text-shadow: 2px 2px 5px rgb(68, 65, 65);
-text-indent: -20px;
+text-indent: -5vw;
 }
 
 
@@ -28,46 +26,43 @@ background-repeat: repeat-x;
 .warning {
   background-color: rgba(206, 206, 206, 0.699);
  
-  width: 300px;
-  border: 15px solid rgb(98, 98, 98);
-  padding: 50px;
+  width: 17vw;
+  border: 1vw solid rgb(98, 98, 98);
+  padding: 2vw;
 position: relative;
-left: 799px;
+left: 39vw;
 border-style: solid;
-border-radius: 30px;
+border-radius: 5vw;
   text-shadow: 2px 2px 5px rgb(68, 65, 65);
-  font-size: 20px;
-  font-weight: 90;
-  display: inline-block;  
+  font-size: 1vw;
+  font-weight: 60;
+  display: inline-block;
 
 
-  
+
 
  
 }
 
 
+
 button {
 
  position: relative;
- left: 30px;
- width: 100px;
+ left: 1vw;
+ width: 8vw;
 
 
 }
 
 img{
   position: relative;
-  left: 30px;
-  height: 100px;
-  width: 100px;
+  left: 2.95vw;
+  height: 5vw;
+  width: 5vw;
 
 }
 
-.warning {max-width: 100%; height: auto;}
 
 
 
-@media screen and(max-width: 400px){
-  body {background: red}
-}
