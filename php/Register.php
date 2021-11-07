@@ -27,7 +27,7 @@
 		echo "Session variables are set.";
 
 	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
-		header("Location: ../html/Break-main.php");
+		header("Location: ../html/index.php");
 		exit();
 	}
 	?>

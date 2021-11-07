@@ -29,19 +29,10 @@
       echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
       echo '<li><a href="../html/Break-register.html">Register</a></li> ';
     }?>
-    <li><a href="..//html/Add-resrvation.html">Add resrvation</a></li>
+    <li><a href="..//html/Add-resrvation.php">Add resrvation</a></li>
     <li><a href="s">Search</a></li>
 <li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li>
-    <li><p> 
-          <?php  if (isset($_SESSION['name'])) {
-        //echo "Hello Tariq";
-        echo  "Welcome ".$_SESSION['name'];
-         } else {
-        echo '';  
-       }
-         ?></p></li>
-    <!-- <li><p>Welcome to break resrvation</p></li> -->
-    <li><p> 
+    <li><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
         echo  "Welcome ".$_SESSION['name'];
