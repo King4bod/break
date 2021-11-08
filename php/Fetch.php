@@ -12,14 +12,14 @@ $conn = new mysqli('localhost','root','','mydatabase');
         while($data = mysqli_fetch_array($records))
       {   ?>
  
- 
-    <div class="col">
-       
+ <article style="display: flex; justify-content: center; margin-top: 30px;">
+    <div class="card-deck"style="max-width: 1100px;">
     <div class="card h-100 bg-secondary  text-white " >
           <img src="..\image\b2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">New Resrvation</h5>
-            <p class="card-text">  <?php
+          
+          <p class="card-text"> <?php
         echo "id=";
         echo $data[0].'<br>'  ;
         echo "Break name :";
@@ -32,7 +32,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
         echo $data[4].'<br>'; 
        ?> </p> 
       <a href="#" class="btn btn-warning">Go somewhere</a>
-  
+  </article>
       
        <?php
       }
