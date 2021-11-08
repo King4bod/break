@@ -11,8 +11,11 @@ $conn = new mysqli('localhost','root','','mydatabase');
         $records = mysqli_query($conn,"select * from add_resravtion"); // fetch data from database
         while($data = mysqli_fetch_array($records))
       {   ?>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white " >
+ 
+ 
+    <div class="col">
+       
+    <div class="card h-100 bg-secondary  text-white " >
           <img src="..\image\b2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">New Resrvation</h5>
@@ -28,8 +31,9 @@ $conn = new mysqli('localhost','root','','mydatabase');
         echo "phone number :" ;
         echo $data[4].'<br>'; 
        ?> </p> 
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-
+      <a href="#" class="btn btn-warning">Go somewhere</a>
+  
+      
        <?php
       }
 
