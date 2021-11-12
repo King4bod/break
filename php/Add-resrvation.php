@@ -1,5 +1,5 @@
 <?php
-    $id =$_POST['id'];
+   // $id =$_POST['id'];
 	$break_name =$_POST['break_name'];
 	$Location = $_POST['Location'];
 	$Price = $_POST['Price'];
@@ -10,8 +10,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into add_resravtion(id, break_name, location, price, phone_number ) values(?, ?, ?, ?, ?)");
-		$stmt->bind_param("issii", $id,$break_name ,$Location, $Price, $Number);
+		$stmt = $conn->prepare("insert into add_resravtion(break_name, location, price, phone_number ) values( ?, ?, ?, ?)");
+		$stmt->bind_param("ssii",$break_name ,$Location, $Price, $Number);
 	    $stmt->execute();
 		//$stmt->store_result();
 		//echo $execval;
@@ -19,7 +19,12 @@
 		$stmt->close();
 		$conn->close();
 	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
-		header("Location: ../html/index.php");
+	echo "<script>
+	alert('تمت اضافة استراحة');
+	window.location.href='../html/index.php';
+	</script>";
+
+ 	//header("Location: ../html/index.php");
 		exit();
 	}
 	?>

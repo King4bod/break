@@ -11,14 +11,7 @@
             <h1> Add-resravtion</h1>
           <div class="panel-body">
             <form action="../php/Add-resrvation.php" method="post">
-              <label for="id"> id</label>
-              <input
-                type="text"
-                id="id"
-                name="id"
-              />
-              <br>
-
+              
                 <label for="break_name"> Break name</label> 
                 <input
                   type="text"
