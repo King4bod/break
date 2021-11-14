@@ -43,3 +43,12 @@ button {
 
 
 }
+
+.btn {
+
+  position: relative;
+  left: -15px;
+  width: 100px;
+ 
+ 
+ }

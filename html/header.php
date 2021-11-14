@@ -10,14 +10,17 @@
 
 
     
-     <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
   
    
   </head>
   <body>
+  <article style="display: flex; justify-content: center;"> 
+ 
   <nav class="bd">
     <img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" >
   <ul>
@@ -31,12 +34,13 @@
     }?>
 
     <li>  <form action="../php/Search.php" method="post">  
-        <input type="text" placeholder="Search for resrvation" name="Search">
+    
+    <input  type="text" placeholder="Search for resrvation" name="Search">
 
-      <button type="submit">بحث</button>
+      <button type="submit"class="btn"><img src="../image\icons8-search-64.png "width="35px" height="35px"  alt=""></button>
     </form>
   </li>
-<li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li>
+   
     <li><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
@@ -52,7 +56,8 @@
 
 </body>
 
-
+      </article> 
+ 
 </html>
 
 
