@@ -26,8 +26,10 @@
 
 		echo "Session variables are set.";
 
-	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
-		header("Location: ../html/index.php");
+		echo "<script>
+		alert('تم التسجبل بنجاح!');
+		window.location.href='../html/index.php';
+		</script>";
 		exit();
 	}
 	?>
