@@ -20,8 +20,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
             <h5 class="card-title"><?php echo $data[1]; ?></h5>
           
           <p class="card-text"> <?php
-        echo "id=";
-        echo $data[0].'<br>'  ;
+        
         echo "Break name :";
         echo $data[1].'<br>';
         echo "Location ";
