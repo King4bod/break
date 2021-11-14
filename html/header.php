@@ -29,8 +29,13 @@
       echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
       echo '<li><a href="../html/Break-register.html">Register</a></li> ';
     }?>
-    <li>      <input type="text" placeholder="Search for resrvation" name="search">
-      <button type="submit">بحث</button></li>
+
+    <li>  <form action="../php/Search.php" method="post">  
+        <input type="text" placeholder="Search for resrvation" name="Search">
+
+      <button type="submit">بحث</button>
+    </form>
+  </li>
 <li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li>
     <li><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
