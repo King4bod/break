@@ -17,7 +17,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
     <div class="card h-100 bg-secondary  text-white " >
           <img src="..\image\b2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">New Resrvation</h5>
+            <h5 class="card-title"><?php echo $data[1]; ?></h5>
           
           <p class="card-text"> <?php
         echo "id=";
