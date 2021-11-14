@@ -11,7 +11,7 @@ h1{
   
   color: rgb(0, 0, 0);
 text-shadow: 2px 2px 5px rgb(68, 65, 65);
-text-indent: -5vw;
+text-indent: -1px;
 }
 
 
@@ -24,24 +24,20 @@ background-repeat: repeat-x;
 
 
 .warning {
-  background-color: rgba(206, 206, 206, 0.699);
+  background-color: rgba(156, 151, 151, 0.699);
  
-  width: 17vw;
-  border: 1vw solid rgb(98, 98, 98);
-  padding: 2vw;
-position: relative;
-left: 39vw;
+  width: 300px;
+     border: 15px solid rgb(98, 98, 98);
+     padding: 50px;
+
 border-style: solid;
-border-radius: 5vw;
-  text-shadow: 2px 2px 5px rgb(68, 65, 65);
-  font-size: 1vw;
+  font-size: 20px;
   font-weight: 60;
   display: inline-block;
-
-
-
-
- 
+  border-style: solid;
+  border-radius: 50px;
+    text-shadow: 2px 2px 5px rgb(68, 65, 65);
+    display: inline-block;  
 }
 
 
@@ -49,20 +45,21 @@ border-radius: 5vw;
 button {
 
  position: relative;
- left: 1vw;
- width: 8vw;
+ left: 30px;
+ width: 100px;
 
 
 }
 
 img{
   position: relative;
-  left: 2.95vw;
-  height: 5vw;
-  width: 5vw;
+  left: 30px;
+  height: 100px;
+  width: 100px;
 
 }
 
-
+/*position: relative;
+left: 39vw;
 
 

@@ -16,16 +16,17 @@
     <br>
     <br>
   
-  
-  
+  </head>
+  <body>
     <h1> New Account </h1>
+    <article style="display: flex; justify-content: center; margin-top: 30px;"> 
     <div class="warning">
      <!--<div class="container">--> 
   
       <form action="../php/Register.php" method="post">
        <img src="../image/break 44.png" width="150px" height="150px" class="logo-icon" >
        <br> 
-       <label for="firstName">  First name  </label> <!--الاسم الاول-->
+       <label for="firstName"  class="form-label">  First name  </label> <!--الاسم الاول-->
                 <input
            
                 type="text"
@@ -36,7 +37,7 @@
                  
                   />
                
-                <label for="lastName">Last name</label> <!--الأسم الأخير-->
+                <label for="lastName" class="form-label">Last name</label> <!--الأسم الأخير-->
                 <input
                   type="text"
                   class="form-control"
@@ -45,9 +46,9 @@
                   placeholder="your lastName"
                   />
                 
-                <label for="type">Type</label> 
+                <label for="type" class="form-label">Type</label> 
                 
-                <select  name ="type" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <select  name ="type" class="form-select" id="floatingSelect" aria-label="Floating label select example" >
                   <option selected>Account type</option>
                   <option  value="Client">Client</option>
                   <option  value="lessor">lessor</option>
@@ -55,9 +56,9 @@
                 </select>
             
    
-                <label for="floatingSelect"></label>
+                <label for="floatingSelect"  class="form-label"></label>
                   
-                <label for="email">Email</label> <!--البريد الألكتوني-->
+                <label for="email"  class="form-label">Email</label> <!--البريد الألكتوني-->
                 <input class="form-control"
                   type="text"
                   id="email"
@@ -67,7 +68,7 @@
                
                 
 
-                <label for="password">Password</label> <!--كلمة المرور-->
+                <label for="password"  class="form-label">Password</label> <!--كلمة المرور-->
                 <input class="form-control"
                   type="password"
                   id="password"
@@ -77,7 +78,7 @@
                   />
                
            
-                <label for="number">Phone number</label> <!--رقم الجوال-->
+                <label for="number" class="form-label">Phone number</label> <!--رقم الجوال-->
                 <input class="form-control"
                   type="number"
                   id="number"
@@ -90,6 +91,7 @@
             </form> 
           </div>
           </div>
-  </body>
 
+        </body>
+      </article> 
   </html>
