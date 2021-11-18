@@ -32,9 +32,9 @@ while($data = mysqli_fetch_array($records))
              
              <p class="card-text"> <?php
             
-             echo $data[2]. "= الموقع<br>";
-             echo $data[3]. " = السعر<br>";
-             echo $data[4]. " = رقم المالك<br>";
+             echo $data[3]. "= الموقع<br>";
+             echo $data[2]. " = السعر<br>";
+             echo $data[5]. " = رقم المالك<br>";
              ?> </p> 
              <a href="#" class="btn btn-warning">احجز</a>
          </article> <?php
