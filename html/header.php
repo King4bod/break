@@ -10,14 +10,17 @@
 
 
     
-     <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
   
    
   </head>
   <body>
+  <article style="display: flex; justify-content: center;"> 
+ 
   <nav class="bd">
   <a class="active" href="../html/index.php"><img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" ></a>
   <ul>
@@ -31,7 +34,7 @@
     }?>
 
     <li>
-    <a class="active" href="Search.php">Search</a>  </li>
+    <a class="active" href="../html/Search.php">Search</a>  </li>
 <!--<li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li> -->
     <li><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
@@ -50,7 +53,8 @@
 
 </body>
 
-
+      </article> 
+ 
 </html>
 
 

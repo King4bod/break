@@ -15,12 +15,7 @@
  
   <div class="warning">
             <form action="../php/Add-resrvation.php" method="post">
-              <label for="id" class="form-label"> id</label>
-              <input class="form-control"
-                type="text"
-                id="id"
-                name="id"
-              />
+          
            
 
                 <label for="break_name"class="form-label"> Break name</label> 
