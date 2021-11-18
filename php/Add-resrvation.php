@@ -10,7 +10,7 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into add_resravtion(break_name, location, price, phone_number ) values( ?, ?, ?, ?)");
+		$stmt = $conn->prepare("insert into reservations(break_name, location, price, phone_number ) values( ?, ?, ?, ?)");
 		$stmt->bind_param("ssii",$break_name ,$Location, $Price, $Number);
 	    $stmt->execute();
 		//$stmt->store_result();

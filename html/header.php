@@ -19,7 +19,7 @@
   </head>
   <body>
   <nav class="bd">
-    <img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" >
+  <a class="active" href="../html/index.php"><img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" ></a>
   <ul>
     <li></li>
     <li> <?php session_start(); if (isset($_SESSION['name'])) {
@@ -30,13 +30,9 @@
       echo '<li><a href="../html/Break-register.html">Register</a></li> ';
     }?>
 
-    <li>  <form action="../php/Search.php" method="post">  
-        <input type="text" placeholder="Search for resrvation" name="Search">
-
-      <button type="submit">بحث</button>
-    </form>
-  </li>
-<li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li>
+    <li>
+    <a class="active" href="Search.php">Search</a>  </li>
+<!--<li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li> -->
     <li><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
@@ -46,6 +42,8 @@
        }
          ?>
          </p></li> 
+         <li>
+    <a class="active" href="../html/About_us.php">About us</a>  </li>
   </ul>
   
 </nav>

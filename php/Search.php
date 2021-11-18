@@ -7,10 +7,12 @@ include "../html/header.php";
 require "connect.php";
 echo '<li><a href="..//html/index.php">home</a></li>';
 $name=$_POST['Search'];
+$loc=$_POST['Search2'];
 
-$records = mysqli_query($conn,"select * from break where name='$name '");
+$records = mysqli_query($conn,"select * from break where name='$name ' AND location='$loc'");
 
 
+if($records->num_rows > 0){
 
 while($data = mysqli_fetch_array($records))
 {  
@@ -33,7 +35,9 @@ while($data = mysqli_fetch_array($records))
          </article> <?php
    
 }
-
+} else {
+  echo '<h1>No resrvation</h1>';
+}
 
 
 ?>

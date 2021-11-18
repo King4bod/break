@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2021 at 11:10 AM
+-- Generation Time: Nov 18, 2021 at 07:01 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -24,36 +24,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `add_resravtion`
+-- Table structure for table `reservations`
 --
 
-CREATE TABLE `add_resravtion` (
+CREATE TABLE `reservations` (
   `break-id` int(200) NOT NULL,
-  `image` varchar(50) NOT NULL,
   `break_name` varchar(200) NOT NULL,
   `location` varchar(200) NOT NULL,
   `price` int(200) NOT NULL,
-  `phone_number` int(200) NOT NULL
+  `phone_number` int(200) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `add_resravtion`
+-- Dumping data for table `reservations`
 --
 
-INSERT INTO `add_resravtion` (`break-id`, `image`, `break_name`, `location`, `price`, `phone_number`) VALUES
-(1, '', 'Albduah', 'Albduah', 555, 32),
-(11, '', 'Albduah23', '232', 12121, 12121),
-(545, '', 'Albduah2', 'break4', 22321, 3215),
-(3434, '', 'gfdgdf', '4324365', 34234, 2147483647);
+INSERT INTO `reservations` (`break-id`, `break_name`, `location`, `price`, `phone_number`, `date`) VALUES
+(1, 'Albduah', 'Albduah', 555, 32, '2021-11-14 17:09:11'),
+(11, 'Albduah23', '232', 12121, 12121, '2021-11-14 17:09:11'),
+(545, 'Albduah2', 'break4', 22321, 3215, '2021-11-14 17:09:11'),
+(3459, '2414121', '45grdsf', 1212, 68904, '2021-11-14 17:09:11'),
+(3460, '2414121', '45grdsf', 1212, 689041, '2021-11-14 17:09:11'),
+(3461, 'Albduah25', 'break35', 1241, 5737, '2021-11-14 17:09:34');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `add_resravtion`
+-- Indexes for table `reservations`
 --
-ALTER TABLE `add_resravtion`
+ALTER TABLE `reservations`
   ADD PRIMARY KEY (`break-id`),
   ADD UNIQUE KEY `phone_number` (`phone_number`);
 
@@ -62,10 +64,10 @@ ALTER TABLE `add_resravtion`
 --
 
 --
--- AUTO_INCREMENT for table `add_resravtion`
+-- AUTO_INCREMENT for table `reservations`
 --
-ALTER TABLE `add_resravtion`
-  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3435;
+ALTER TABLE `reservations`
+  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3462;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
