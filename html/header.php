@@ -27,7 +27,7 @@
     <li></li>
     <li> <?php session_start(); if (isset($_SESSION['name'])) {
         echo '<a class="active" href="../php/Logout.php">Log out</a>';
-        echo '<li><a href="..//html/Add-resrvation.php">Add resrvation</a></li>';
+        echo '<li><a href="../html/my_resrvation.php">My resrvation</a></li>';
     } else {
       echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
       echo '<li><a href="../html/Break-register.html">Register</a></li> ';
