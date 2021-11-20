@@ -13,18 +13,18 @@ require 'connect.php';
 	//$Role=$_POST['Role'];
 	
 
-    $query= "update reservations set break_name='".$break_name."',location='".$location."',price='".$price."',phone_number='".$phone_number."' where email=".$_SESSION['name']."
+    $query= "update reservations set break_name='".$break_name."',location='".$location."',price='".$price."',phone_number='".$phone_number."' where users_id=".$_SESSION['id']."
 			";
 	$result= mysqli_query($conn, $query);
 
 	if( !$result){
 		echo 'data is inerted';
-		header('Location: ../index.php');
+		//header('Location: ../html/index.php');
 		exit();
 	}
 	else {
 		echo"Database query filed";
-		header('Location: ../update.php?status=success');
+		header('Location: ../html/index.php');
 		exit();
 	}
 

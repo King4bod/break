@@ -1,4 +1,5 @@
 <?php
+session_start();
    // $id =$_POST['id'];
 	$break_name =$_POST['break_name'];
 	$Location = $_POST['Location'];
@@ -10,7 +11,7 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into reservations(break_name, location, price, phone_number ) values( ?, ?, ?, ?)");
+		$stmt = $conn->prepare("insert into reservations(break_name, location, price, phone_number,users_id ) values( ?, ?, ?, ?,". $_SESSION["id"].")");
 		$stmt->bind_param("ssii",$break_name ,$Location, $Price, $Number);
 	    $stmt->execute();
 		//$stmt->store_result();

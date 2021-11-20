@@ -14,7 +14,7 @@
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
-            <form action="../php/Add-resrvation.php" method="post">
+            <form action="../php/update.php" method="post">
           
            
 
