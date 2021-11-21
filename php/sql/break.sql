@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2021 at 06:55 PM
+-- Generation Time: Nov 21, 2021 at 07:28 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -52,7 +52,7 @@ INSERT INTO `break` (`break-id`, `name`, `price`, `location`, `rental`, `users-i
 --
 ALTER TABLE `break`
   ADD PRIMARY KEY (`break-id`),
-  ADD KEY `users` (`users-id`);
+  ADD KEY `v` (`users-id`);
 
 --
 -- Constraints for dumped tables
@@ -62,8 +62,8 @@ ALTER TABLE `break`
 -- Constraints for table `break`
 --
 ALTER TABLE `break`
-  ADD CONSTRAINT `add_resravtion` FOREIGN KEY (`break-id`) REFERENCES `add_resravtion` (`break-id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `users` FOREIGN KEY (`users-id`) REFERENCES `users` (`users-id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD CONSTRAINT `a` FOREIGN KEY (`break-id`) REFERENCES `reservations` (`break-id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `v` FOREIGN KEY (`users-id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

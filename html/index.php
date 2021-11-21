@@ -15,19 +15,6 @@
 
     <div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-<<<<<<< HEAD
-   
-            <?php include "../php/Fetch.php";?>
-          
-
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-  
-=======
     <?php include "../php/Fetch.php";?>
->>>>>>> e19d258c902268185e87b826341b1fe9714d0d05
   </body>
 </html>

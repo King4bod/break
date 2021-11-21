@@ -25,37 +25,46 @@
   
   <article style="display: flex; justify-content: center;"> 
  
-  <nav class="bd">
-  <a class="active" href="../html/index.php"><img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" ></a>
-  <ul>
-    <li></li>
-    <li> <?php session_start(); if (isset($_SESSION['name'])) {
-        echo '<a class="active" href="../php/Logout.php">Log out</a>';
-        echo '<li><a href="../html/my_resrvation.php">My resrvation</a></li>';
+
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+    <a class="active" href="../html/index.php"><img src="../image/break 44.png" width="50px" height="50px" class="logo-icon" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+
+    <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
+        echo '<a class="nav-link" href="../php/Logout.php">Log out</a>';
+        echo '<li  class="nav-item"><a href="../html/my_resrvation.php">My resrvation</a></li>';
     } else {
-      echo '<a class="active" href="../html/Break-login.html">Login</a></li>';
-      echo '<li><a href="../html/Break-register.html">Register</a></li> ';
+      echo '<a class="nav-link" href="../html/Break-login.html">Login</a></li>';
+      echo '<li  class="nav-item"><a href="../html/Break-register.html">Register</a></li> ';
     }?>
 
-    <li>
+    <li class="nav-item">
     <a class="active" href="../html/Search.php">Search</a>  </li>
-<!--<li>    <img src="https://img.icons8.com/fluency/48/000000/menu--v2.png"/></li> -->
-    <li><p style="color:white"> 
+    <li class="nav-item"><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
         echo  "Welcome ".$_SESSION['name'];
          } else {
-        echo 'Welcome to Break';  
+        echo 'Welcome to Break';
        }
          ?>
          </p></li> 
-         <li>
+         <li class="nav-item">
     <a class="active" href="../html/About_us.php">About us</a>  </li>
-  </ul>
-  
-</nav>
 
 
+        
+      </div>
+    </div>
+  </nav>
+</header>
 
 
 
