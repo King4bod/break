@@ -14,14 +14,25 @@
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
-            <form action="../php/Add-resrvation.php" method="post">
-              <label for="id" class="form-label"> id</label>
+         
+  <button type="submit"class="btn"><img src="../image\add2.png "width="35px" height="35px"  alt=""></button>
+  <form action="../php/Add-resrvation.php" method="post">
+           
+           
+           
+           
+            <div class="row row-cols-1 row-cols-md-3 g-4">  <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > </div>
+          
+          <br>
+            <label for="id" class="form-label"> id</label>
               <input class="form-control"
                 type="text"
                 id="id"
                 name="id"
               />
            
+
+
 
                 <label for="break_name"class="form-label"> Break name</label> 
                 <input class="form-control"
@@ -50,7 +61,7 @@
                   id="Number"
                   name="Number"
                 />
-                
+                <br>
                 <button type="submit" class="btn btn-warning">submit</button>
 
             </form> 
