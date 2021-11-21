@@ -14,18 +14,14 @@
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
-<<<<<<< HEAD
-            <form action="../php/Add-resrvation.php" method="post">
-=======
- <button type="submit"class="btn"><img src="../image\add2.png "width="35px" height="35px"  alt=""></button>         
-  
+ <!-- <button type="submit"class="btn"><img src="../image\add2.png "width="35px" height="35px"  alt=""></button>         
+-->
   <form action="../php/Add-resrvation.php" method="post">
->>>>>>> a2e36b39d123ba9f1b58c4050369a4f30f871530
           
            
  
-  <div class="row row-cols-1 row-cols-md-3 g-4">  <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > </div>
-
+  <!--<div class="row row-cols-1 row-cols-md-3 g-4">  <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > </div>
+-->
 
                 <label for="break_name"class="form-label"> Break name</label> 
                 <input class="form-control"
@@ -33,7 +29,7 @@
                   id="break_name"
                   name="break_name"
                 />
-               
+                <br>
                 <label name="Location" id ="Location" class="form-label">Location </label>
                 <select name="Location" id="Location">
                   <option value="alriyad">الرياض</option>
