@@ -10,6 +10,8 @@ include "../html/header.php";
     </title>
     
     <link rel="stylesheet" href="../css/Break1.css">
+    <link rel="stylesheet" href="../css/Break2.css">
+
       <!-- Bootstrap core CSS -->
 <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
@@ -41,10 +43,10 @@ include "../html/header.php";
                   <label name="Search2" id ="Search2" class="form-label">Location </label> 
 
                   <select name="Search2" id="Search2">
-                   <option value="go">الرياض</option>
-                   <option value="saab">جدة</option>
-                   <option value="opel">الدمام</option>
-                   <option value="audi">جازان</option>
+                  <option value="alriyad">الرياض</option>
+                  <option value="jaddh">جدة</option>
+                  <option value="aldmam">الدمام</option>
+                  <option value="jazan">جازان</option>
                    </select>
                    <br>
                  <button type="submit" class="btn btn-warning">بحث</button>

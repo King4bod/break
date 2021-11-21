@@ -14,27 +14,8 @@
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
-<<<<<<< HEAD
-         
-  <button type="submit"class="btn"><img src="../image\add2.png "width="35px" height="35px"  alt=""></button>
-  <form action="../php/Add-resrvation.php" method="post">
-           
-           
-           
-           
-            <div class="row row-cols-1 row-cols-md-3 g-4">  <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > </div>
-          
-          <br>
-            <label for="id" class="form-label"> id</label>
-              <input class="form-control"
-                type="text"
-                id="id"
-                name="id"
-              />
-=======
             <form action="../php/Add-resrvation.php" method="post">
           
->>>>>>> e19d258c902268185e87b826341b1fe9714d0d05
            
 
 
@@ -46,12 +27,14 @@
                   name="break_name"
                 />
                
-                <label for="Location"class="form-label">Location </label> 
-                <input class="form-control"
-                  type="text"
-                  id="Location"
-                  name="Location"
-                />
+                <label name="Location" id ="Location" class="form-label">Location </label>
+                <select name="Location" id="Location">
+                  <option value="alriyad">الرياض</option>
+                  <option value="jaddh">جدة</option>
+                  <option value="aldmam">الدمام</option>
+                  <option value="jazan">جازان</option>
+                </select>
+                <br>
          
                 <label for="Price"class="form-label"> Price per day </label>
                 <input class="form-control"
