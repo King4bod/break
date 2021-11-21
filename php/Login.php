@@ -16,10 +16,12 @@ session_start();
       $stmt->execute();
       $stmt_result = $stmt->get_result();
       
-      $records = mysqli_query($conn,"select first_name from users where email = '$email'"); // fetch data from database
+      $records = mysqli_query($conn,"select first_name ,users_id from users where email = '$email'"); // fetch data from database
         while($data = mysqli_fetch_array($records))
       {
         $_SESSION["name"] = $data[0];
+        $_SESSION["id"] = $data[1];
+
       }
       if($stmt_result->num_rows > 0){
           $data = $stmt_result->fetch_assoc();

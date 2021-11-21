@@ -10,34 +10,13 @@
  
       
 
-  <h1> Add-resravtion</h1>
+  <h1> Update-resravtion</h1>
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
-<<<<<<< HEAD
-         
-  <button type="submit"class="btn"><img src="../image\add2.png "width="35px" height="35px"  alt=""></button>
-  <form action="../php/Add-resrvation.php" method="post">
-           
-           
-           
-           
-            <div class="row row-cols-1 row-cols-md-3 g-4">  <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > </div>
+            <form action="../php/update.php" method="post">
           
-          <br>
-            <label for="id" class="form-label"> id</label>
-              <input class="form-control"
-                type="text"
-                id="id"
-                name="id"
-              />
-=======
-            <form action="../php/Add-resrvation.php" method="post">
-          
->>>>>>> e19d258c902268185e87b826341b1fe9714d0d05
            
-
-
 
                 <label for="break_name"class="form-label"> Break name</label> 
                 <input class="form-control"
@@ -65,8 +44,9 @@
                   type="text"
                   id="Number"
                   name="Number"
+                  
                 />
-                <br>
+                
                 <button type="submit" class="btn btn-warning">submit</button>
 
             </form> 

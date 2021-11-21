@@ -8,7 +8,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-        $records = mysqli_query($conn,"select * from add_resravtion"); // fetch data from database
+        $records = mysqli_query($conn,"select * from reservations"); // fetch data from database
         while($data = mysqli_fetch_array($records))
       {   ?>
  
@@ -20,8 +20,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
             <h5 class="card-title"><?php echo $data[1]; ?></h5>
           
           <p class="card-text"> <?php
-        echo "id=";
-        echo $data[0].'<br>'  ;
+        
         echo "Break name :";
         echo $data[1].'<br>';
         echo "Location ";
