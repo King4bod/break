@@ -4,6 +4,8 @@
 <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/backgraund.css">
+<link rel="stylesheet" href="../css/Break2.css">
+
 </head>
 </html>
 <?php 
@@ -34,7 +36,7 @@ while($data = mysqli_fetch_array($records))
             
              echo $data[2]. "= الموقع<br>";
              echo $data[3]. " = السعر<br>";
-             echo $data[6]. " = رقم المالك<br>";
+             echo $data[5]. " = رقم المالك<br>";
              ?> </p> 
              <a href="#" class="btn btn-warning">احجز</a>
          </article> <?php
