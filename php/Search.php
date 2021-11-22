@@ -15,7 +15,7 @@ echo '<li><a href="..//html/index.php"class="btn btn-warning">Back to home page<
 $name=$_POST['Search'];
 $loc=$_POST['Search2'];
 
-$records = mysqli_query($conn,"select * from reservations where break_name='$name ' AND location='$loc'");
+$records = mysqli_query($conn,"select * from break where break_name='$name ' AND location='$loc'");
 
 
 if($records->num_rows > 0){

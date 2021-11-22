@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>resvation</title>
+  <title> My-resravtion</title>
 <?php include "header.php";?>
    
     <link rel="stylesheet" href="../css/Break2.css">
@@ -29,7 +29,7 @@
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">  
       <h1>delete</h1>
-      <a   href="../php/delete.php"><img  src="../image/delete-but.png" width="50px" height="50px" class="img" ></a>
+      <a   href="../html/delete.php"><img  src="../image/delete-but.png" width="50px" height="50px" class="img" ></a>
             </div>
           
 </div>

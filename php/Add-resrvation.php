@@ -11,7 +11,7 @@ session_start();
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into reservations(break_name, location, price, phone_number,users_id ) values( ?, ?, ?, ?,". $_SESSION["id"].")");
+		$stmt = $conn->prepare("insert into break(break_name, location, price, phone_number,users_id ) values( ?, ?, ?, ?,". $_SESSION["id"].")");
 		$stmt->bind_param("ssii",$break_name ,$Location, $Price, $Number);
 	    $stmt->execute();
 		//$stmt->store_result();

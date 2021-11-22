@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
+    <title>Add-resravtion</title>
 <?php include "header.php";?>
    
     <link rel="stylesheet" href="../css/Break2.css">
@@ -34,9 +34,9 @@
 
                   <select  class="form-select "name="Location" id="Location">
                    <option value="alriath">الرياض</option>
-                   <option value="saab">جدة</option>
-                   <option value="opel">الدمام</option>
-                   <option value="audi">جازان</option>
+                   <option value="jaddh">جدة</option>
+                   <option value="aldmam">الدمام</option>
+                   <option value="jazan">جازان</option>
                    </select>
            
          

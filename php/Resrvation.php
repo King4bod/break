@@ -8,7 +8,7 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into reservations(id, name_break, location, name, email) values(4,'Al-budaih', 'https://goo.gl/maps/Hb7K6uqiHd164XTNA' ,?, ?)");
+		$stmt = $conn->prepare("insert into break(id, name_break, location, name, email) values(4,'Al-budaih', 'https://goo.gl/maps/Hb7K6uqiHd164XTNA' ,?, ?)");
 		$stmt->bind_param("ss", $name,$email);
 	    $stmt->execute();
 		//$stmt->store_result();

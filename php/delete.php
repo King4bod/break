@@ -1,15 +1,16 @@
 <?php
 require 'connect.php';
 session_start();
+$mybreak=$_POST['mybreak'];
 
-$query= " DELETE FROM reservations WHERE uesrs_id=".$_SESSION["id"];  
+$query= " DELETE FROM break where users_id='".$_SESSION['id']."' AND break_name='".$mybreak."'";  
   
 $result= mysqli_query($conn, $query);
-require 'Logout.php';
+//require 'Logout.php';
 if($result)
 {
 
-    header('Location: ../index.php');
+    header('Location: ../html/index.php');
     exit();
 }
 else
