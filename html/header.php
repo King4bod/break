@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>header</title>
 </head>
 
 
@@ -36,17 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
-
-    <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
-        echo '<a class="nav-link" href="../php/Logout.php">Log out</a>';
-        echo '<li  class="nav-item"><a href="../html/my_resrvation.php">My resrvation</a></li>';
-    } else {
-      echo '<a class="nav-link" href="../html/Break-login.html">Login</a></li>';
-      echo '<li  class="nav-item"><a href="../html/Break-register.html">Register</a></li> ';
-    }?>
-
-    <li class="nav-item">
-    <a class="active" href="../html/Search.php">Search</a>  </li>
+  
     <li class="nav-item"><p style="color:white"> 
           <?php  if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
@@ -56,6 +46,17 @@
        }
          ?>
          </p></li> 
+         <li class="nav-item">
+    <a class="active" href="../html/Search.php">Search</a>  </li>
+
+    <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
+        echo '<a class="nav-link" href="../php/Logout.php">Log out</a>';
+        echo '<li  class="nav-item"><a href="../html/my_resrvation.php">My resrvation</a></li>';
+    } else {
+      echo '<a class="nav-link" href="../html/Break-login.html">Login</a></li>';
+      echo '<li  class="nav-item"><a href="../html/Break-register.html">Register</a></li> ';
+    }?>
+
          <li class="nav-item">
     <a class="active" href="../html/About_us.php">About us</a>  </li>
 

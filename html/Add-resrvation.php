@@ -30,12 +30,15 @@
                   name="break_name"
                 />
                
-                <label for="Location"class="form-label">Location </label> 
-                <input class="form-control"
-                  type="text"
-                  id="Location"
-                  name="Location"
-                />
+ <label name="Location" id ="Search2" class="form-label">Location </label> 
+
+                  <select  class="form-select "name="Location" id="Location">
+                   <option value="alriath">الرياض</option>
+                   <option value="saab">جدة</option>
+                   <option value="opel">الدمام</option>
+                   <option value="audi">جازان</option>
+                   </select>
+           
          
                 <label for="Price"class="form-label"> Price per day </label>
                 <input class="form-control"

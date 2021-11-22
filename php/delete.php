@@ -1,11 +1,11 @@
 <?php
-require '../connect.php';
+require 'connect.php';
 session_start();
 
-$query= " DELETE FROM reservations WHERE email=".$_SESSION["name"];  
+$query= " DELETE FROM reservations WHERE uesrs_id=".$_SESSION["id"];  
   
 $result= mysqli_query($conn, $query);
-require '../Logout.php';
+require 'Logout.php';
 if($result)
 {
 
