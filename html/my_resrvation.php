@@ -19,6 +19,9 @@
   <div class="warning">
   
   <form action="../php/Add-resrvation.php" method="post">
+
+
+
   <div class="row row-cols-1 row-cols-md-3 g-4">       
   <h1>add</h1>
             <a  href="../html/Add-resrvation.php">  <img  src="../image/add-but.png" width="50px" height="50px" class="img" > </a>
@@ -26,6 +29,10 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">       
       <h1>Update</h1>
       <a  href="../html/update.php"><img  src="../image/up-but.png" width="50px" height="50px" class="img" ></a>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">       
+      <h1>Update-pictures</h1>
+      <a  href="../html/image.php"><img  src="../image/add2.png" width="50px" height="50px" class="img" ></a>
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">  
       <h1>delete</h1>
