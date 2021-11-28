@@ -73,6 +73,7 @@ html {
 }
         </style>
     <div class="about-section">
+      <br>
   <h1>About Us Page</h1>
   <p>مشروع break reservation</p>
   <p>Resize the browser window to see that this page is responsive by the way.</p>

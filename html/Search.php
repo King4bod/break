@@ -49,9 +49,9 @@ include "../html/header.php";
 
                   <select class="form-select" name="Search2" id="Search2">
                    <option value="alriath">الرياض</option>
-                   <option value="saab">جدة</option>
-                   <option value="opel">الدمام</option>
-                   <option value="audi">جازان</option>
+                   <option value="jaddh">جدة</option>
+                   <option value="aldmam">الدمام</option>
+                   <option value="jazan">جازان</option>
                    </select>
                    <br>
                  <button type="submit" class="btn btn-warning">بحث</button>
