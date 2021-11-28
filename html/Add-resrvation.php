@@ -4,7 +4,9 @@
     <title>Add-resravtion</title>
 <?php include "header.php";?>
    
-    <link rel="stylesheet" href="../css/Break2.css">
+    <link rel="stylesheet" href="../css/add.css">
+  
+ 
   </head>
   <body>
  
@@ -28,7 +30,8 @@
                   type="text"
                   id="break_name"
                   name="break_name"
-                />
+                  placeholder="break_name"
+                  />
                
  <label name="Location" id ="Search2" class="form-label">Location </label> 
 
@@ -41,7 +44,8 @@
            
          
                 <label for="Price"class="form-label"> Price per day </label>
-                <input class="form-control"
+                <input type="number" id="appt" name="appt"class="form-select "
+   
                   type="text"
                   id="Price"
                   name="Price"
@@ -52,12 +56,10 @@
                   type="text"
                   id="Number"
                   name="Number"
-                />
+                  placeholder= "+966 5... "
+                  />
                 <br>
-                <input type="hidden" name="size" value="1000000">
-
-  	<div>
-  		<button type="submit">submit</button>
+                <button type="submit" class="button">submit</button>
 
             </form> 
  

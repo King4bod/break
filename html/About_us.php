@@ -1,7 +1,8 @@
 <html>
     <head>
     <?php include "header.php";?>
-</head>
+    <link rel="stylesheet" href="../css/backgraund.css">
+  </head>
     <style>
 body {
   font-family: Arial, Helvetica, sans-serif;

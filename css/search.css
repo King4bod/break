@@ -1,0 +1,56 @@
+body{
+    background-image: url(../image/shr.png);
+
+    
+    }
+
+
+
+
+
+    .warning {
+        background-color: rgba(124, 49, 20, 0.699);
+       
+        width: 400px;
+           border: 15px solid rgb(255, 230, 0);
+           padding: 50px;
+      
+      border-style: solid;
+        font-size: 20px;
+        font-weight: 60;
+        display: inline-block;
+        border-style: solid;
+        border-radius: 50px;
+        color: yellow; 
+        text-shadow: 2px 2px 5px rgb(237, 241, 10);
+          display: inline-block;  
+      }
+      
+      
+      
+      button {
+      
+       position: relative;
+       left: 80px;
+       width: 100px;
+      
+      
+      }
+      
+      .img{
+        position: relative;
+        left: 80px;
+        height: 100px;
+        width: 100px;
+      
+      }
+
+      .shr{
+
+        position: relative;
+        left: 2px;
+        height: 20px;
+        width: 20px;
+      
+
+      }
