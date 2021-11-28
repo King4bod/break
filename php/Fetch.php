@@ -15,7 +15,9 @@ $conn = new mysqli('localhost','root','','mydatabase');
  <article style="display: flex; justify-content: center; margin-top: 30px;">
     <div class="card-deck"style="max-width: 1100px;">
     <div class="card h-100 bg-secondary  text-white " >
-          <img src="..\image\b2.jpg" class="card-img-top" alt="...">
+          <!--<img src="..\image\b2.jpg" class="card-img-top" alt="...">-->
+          <?php echo "<img src='../image/".$data['image']."' style='width:645px;height:600px;' >";  ?>   
+
           <div class="card-body">
             <h5 class="card-title"><?php echo $data[1]; ?></h5>
           
