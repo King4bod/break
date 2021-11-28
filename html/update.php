@@ -4,7 +4,7 @@
     <title>
 <?php include "header.php";?>
    
-    <link rel="stylesheet" href="../css/Break2.css">
+<link rel="stylesheet" href="../css/add.css">
   </head>
   <body>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -58,8 +58,8 @@
                   name="Number"
                   
                 />
-                
-                <button type="submit" class="btn btn-warning">submit</button>
+                <br>                
+                <button type="submit" class="button">submit</button>
 
             </form> 
  

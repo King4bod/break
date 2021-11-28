@@ -9,8 +9,8 @@ include "../html/header.php";
         Search
     </title>
     
-    <link rel="stylesheet" href="../css/Break1.css">
-    <link rel="stylesheet" href="../css/Break2.css">
+    <link rel="stylesheet" href="../css/search.css">
+
 
       <!-- Bootstrap core CSS -->
 <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
@@ -33,7 +33,7 @@ include "../html/header.php";
   
   <div class="warning">
     
-    <img src="../image/break 44.png" width="150px" height="150px" class="logo-icon" >
+    <img src="../image/break 44.png"class="img">
             
             <form action="../php/Search.php" method="post">
                 <label for="email "class="form-label">Name </label> 
@@ -45,7 +45,10 @@ include "../html/header.php";
                   placeholder="Search for name"
                   />
                   <br>
+                
                   <label name="Search2" id ="Search2" class="form-label">Location </label> 
+    <img src="../image/ico.png"  class="shr" >
+   
 
                   <select class="form-select" name="Search2" id="Search2">
                    <option value="alriath">الرياض</option>

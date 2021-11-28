@@ -1,7 +1,8 @@
 <html>
     <head>
     <?php include "header.php";?>
-</head>
+    <link rel="stylesheet" href="../css/backgraund.css">
+  </head>
     <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -72,7 +73,8 @@ html {
   }
 }
         </style>
-    <div class="about-section">
+  <br>
+  <div class="about-section">
   <h1>About Us Page</h1>
   <p>مشروع break reservation</p>
   <p>Resize the browser window to see that this page is responsive by the way.</p>
