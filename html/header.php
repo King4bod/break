@@ -51,7 +51,9 @@
 
     <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
         echo '<a class="nav-link" href="../php/Logout.php">Log out</a>';
-        echo '<li  class="nav-item"><a href="../html/my_resrvation.php">My resrvation</a></li>';
+        echo '<li  class="nav-item"><a href="../html/my_resrvation.php">My Break</a></li>';
+        echo '<li  class="nav-item"><a href="../html/invoice.php">My Reservation</a></li>';
+
     } else {
       echo '<a class="nav-link" href="../html/Break-login.html">Login</a></li>';
       echo '<li  class="nav-item"><a href="../html/Break-register.html">Register</a></li> ';

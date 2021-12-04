@@ -32,7 +32,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
         echo "phone number :" ;
         echo $data[4].'<br>'; 
        ?> </p> 
-      <a href="#" class="btn btn-warning">Go somewhere</a>
+      <a href="../html/rev.php" class="btn btn-warning">احجز</a>
   </article>
       
        <?php
