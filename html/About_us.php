@@ -23,7 +23,7 @@
         <p class="title">CEO & Founder</p>
         <p>الرئيس ومساعد php</p>
         <p>tvtc@example.com</p>
-        <p><button class="button">Contact</button></p>
+       
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@
         <p class="title">Art Dictor</p>
         <p>مصمم الرئيسي</p>
         <p>tvtc@example.com</p>
-        <p><button class="button">Contact</button></p>
+       
       </div>
     </div>
   </div>
@@ -49,7 +49,7 @@
         <p class="title">Art assitent</p>
         <p>مساعد مصمم</p>
         <p>tvtc@example.com</p>
-        <p><button class="button">Contact</button></p>
+      
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@
         <p class="title">Sql and php </p>
         <p>php و sql </p>
         <p>tvtc@example.com</p>
-        <p><button class="button">Contact</button></p>
+   
       </div>
     </div>
   </div>

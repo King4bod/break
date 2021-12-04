@@ -33,13 +33,15 @@ $conn = new mysqli('localhost','root','','mydatabase');
         echo "phone number :" ;
         echo $data[4].'<br>'; 
        ?> </p> 
-     <p><button class="button">Contact</button>
- 
- 
+     <p>
+ <form action="../html/rev.php">
+ <button type="submit" class="button">Contact</button>
+ </form>
+   
  
     </article>
-      <a href="../html/rev.php" class="btn btn-warning">احجز</a>
-  </article>
+     
+
       
        <?php
       }
