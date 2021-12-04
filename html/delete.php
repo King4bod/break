@@ -3,7 +3,11 @@
   <head>
     <title>Delete-resravtion</title>
 <?php include "header.php";?>
-   
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+
+
 <link rel="stylesheet" href="../css/add.css">
   </head>
   <body>
@@ -28,7 +32,8 @@
                 <?php
       }  ?>     </select>
       <br>
-                      <button type="submit" class="Delete">Delete</button>
+      <button type="submit" class="Delete">submit</button>
+
 
 </form> 
 

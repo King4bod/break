@@ -57,7 +57,9 @@ include "../html/header.php";
                    <option value="jazan">جازان</option>
                    </select>
                    <br>
-                 <button type="submit" class="btn btn-warning">بحث</button>
+                   <button type="submit" class="button">submit</button>
+          
+          
                 </form>
        
   

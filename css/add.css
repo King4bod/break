@@ -50,7 +50,7 @@ border-style: solid;
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #05a000;
+    background-color: #00a030;
     border: none;
     border-radius: 10px;
     box-shadow: 0 9px rgb(3, 82, 0);
@@ -83,21 +83,22 @@ border-style: solid;
   box-shadow: 0 9px rgb(144, 4, 4);
 }
 
-.button:hover {background-color: #053d03}
+.Delete:hover {background-color: #441c1c}
 
 
- .add{
-  text-indent: -30px;
+ .txtadd{
+  text-indent: -40px;
 
  }
 
-.img
-{
-  position: relative;
-  left: 80px;
+.butimg{
 
+position: relative;
+left: 20px;
 }
- 
- 
 
- 
+ img{
+
+  position: relative;
+left:-20px;
+ }

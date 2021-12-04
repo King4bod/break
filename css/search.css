@@ -4,7 +4,16 @@ body{
     
     }
 
-
+   
+    h1{
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      color: rgb(42, 42, 42);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-indent: -1px;
+    }
+    
 
 
 
@@ -28,14 +37,28 @@ body{
       
       
       
-      button {
-      
-       position: relative;
-       left: 80px;
-       width: 100px;
-      
-      
+      .button {
+        width: 100px;
+        position: relative;
+        left: 80px;
+        display: inline-block;
+        padding: 6px 6px;
+        font-size: 20px;
+       
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: rgb(116, 0, 0);
+        background-color: #fbff02;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px rgba(255, 211, 14, 0.931);
       }
+      
+      .button:hover {background-color: rgba(173, 162, 1, 0.699);}
+      
+      
+    
       
       .img{
         position: relative;
