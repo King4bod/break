@@ -19,9 +19,13 @@
   <div class="warning">
   <form method='post' action='../php/image.php' enctype='multipart/form-data'>
  <?php include "../php/connect.php";
-    $img = mysqli_query($conn, "SELECT image FROM break where users_id=".$_SESSION['id']."");
+    $img = mysqli_query($conn, "SELECT image,image2,image3,image4 FROM break where users_id=".$_SESSION['id']."");
        while ($row = mysqli_fetch_array($img)) {     
-          echo "<img src='../image/".$row['image']."' style='width:300px;height:300px;' >";   
+          echo "<img src='../image/".$row['image']."' style='width:400px;height:400px;' >";
+          echo "<img src='../image/".$row['image2']."' style='width:400px;height:400px;' >";   
+          echo "<img src='../image/".$row['image3']."' style='width:400px;height:400px;' >";   
+          echo "<img src='../image/".$row['image4']."' style='width:400px;height:400px;' >";   
+
       } 
 ?>
   <label name="mybreak"  class="form-label">your break </label>
@@ -36,6 +40,10 @@
       <br>
 <div class="form-group">
  <input type="file" name="image" >
+ <input type="file" name="image2" >
+ <input type="file" name="image3" >
+ <input type="file" name="image4" >
+
 </div> 
 <div class="form-group"> 
  <input type='submit' name='submit' value='Upload' class="button">

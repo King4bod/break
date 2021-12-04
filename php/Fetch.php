@@ -14,7 +14,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
  
  <article style="display: flex; justify-content: center; margin-top: 30px;">
     <div class="card-deck"style="max-width: 1100px;">
-    <div class="card h-100  " >
+    <div class="card h-100 " >
    
           <!--<img src="..\image\b2.jpg" class="card-img-top" alt="...">-->
           <?php echo "<img src='../image/".$data['image']."' style='width:600px;height:600px;' >";  ?>   
@@ -38,6 +38,8 @@ $conn = new mysqli('localhost','root','','mydatabase');
  
  
     </article>
+      <a href="../html/rev.php" class="btn btn-warning">احجز</a>
+  </article>
       
        <?php
       }
