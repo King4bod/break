@@ -34,8 +34,8 @@
                {   
           
         
-                     echo "Break id =".$data['break-id'].'<br>';
-                     echo "Break name :".$data['name'].'<br>';
+                     echo "Break id =".$data['break_id'].'<br>';
+                     echo "Break name :".$data['break_name'].'<br>';
                      echo "Break price =".$data['price'].'<br>';
                      echo "Break location :".$data['location'].'<br>';
                      echo "Start date =".$data['start_date'].'<br>';
