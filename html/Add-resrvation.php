@@ -18,7 +18,7 @@
   <div class="warning">
  <!-- <button type="submit"class="btn"><img src="../image\add2.png "width="35px" height="35px"  alt=""></button>         
 -->
-  <form action="../php/Add-resrvation.php" method="post">
+  <form action="../php/Add-resrvation.php" method="post" enctype='multipart/form-data'>
           
            
  
@@ -44,7 +44,7 @@
            
          
                 <label for="Price"class="form-label"> Price per day </label>
-                <input type="number" id="appt" name="appt"class="form-select "
+                <input type="number" class="form-select "
    
                   type="text"
                   id="Price"
@@ -59,7 +59,12 @@
                   placeholder= "+966 5... "
                   />
                 <br>
-                <button type="submit" class="button">submit</button>
+                <input type="file" name="image" >
+ <input type="file" name="image2" >
+ <input type="file" name="image3" >
+ <input type="file" name="image4" >
+               
+                <input type='submit' name='submit' value='Upload' class="button">
 
             </form> 
  

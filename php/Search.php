@@ -27,7 +27,7 @@ while($data = mysqli_fetch_array($records))
     <article style="display: flex; justify-content: center; margin-top: 30px;">
        <div class="card-deck"style="max-width: 1100px;">
        <div class="card h-100 bg-secondary  text-white " >
-             <img src="..\image\b2.jpg" class="card-img-top" alt="...">
+            <?php echo "<img src='../image/".$data['image']."' class='card-img-top'>" ?>
              <div class="card-body">
                <h5 class="card-title"><?php echo $data[1]; ?></h5>
              
@@ -35,7 +35,7 @@ while($data = mysqli_fetch_array($records))
             
              echo $data[2]. "= الموقع<br>";
              echo $data[3]. " = السعر<br>";
-             echo $data[5]. " = رقم المالك<br>";
+             echo $data['users_id']. " = رقم المالك<br>";
              ?> </p> 
              <a href="#" class="btn btn-warning">احجز</a>
          </article> <?php

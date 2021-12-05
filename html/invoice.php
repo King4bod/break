@@ -41,7 +41,7 @@
                      echo "Start date =".$data['start_date'].'<br>';
                      echo "End date =".$data['end_date'].'<br>';
                      echo "Your id =".$data['users_id'].'<br>';
-                     echo '<button type="submit" class="button">print</button>';
+                     echo '-----------------------------';
                }
               }    else {
                     echo "No reservations";
