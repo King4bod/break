@@ -14,9 +14,9 @@
       
 
   <h1> My-resravtion</h1>
-  <article style="display: flex; justify-content: center; margin-top: 30px;"> 
+  <article style="display: flex; justify-content: center; margin-top: 70px;"> 
  
-  <div class="warning">
+  <div class="adiv">
   
   <form action="../php/Add-resrvation.php" method="post">
 

@@ -85,4 +85,14 @@ body{
         }
       }
       
-      
+      .text{
+        
+          text-align: center;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 30px;
+          color: rgb(253, 225, 63);
+          text-shadow: -1px 0 rgb(218, 203, 0), 0 1px rgb(165, 148, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(94, 91, 4);
+        text-indent: -1px;
+        
+     
+      }
