@@ -44,4 +44,6 @@
  
           </body>
 </article>
+<br> <br> <br> <br> <br> <br><br> <br> <br> 
+<?php include "../html/footer.php"?>
 </html>

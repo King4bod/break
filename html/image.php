@@ -27,7 +27,7 @@
           echo "<img src='../image/".$row['image4']."' style='width:400px;height:400px;' >";   
 
       } 
-?>
+?> 
   <label name="mybreak"  class="form-label">your break </label>
                 <select name="mybreak" class="form-select">        
          <?php  include "../php/connect.php";
@@ -49,3 +49,8 @@
  <input type='submit' name='submit' value='Upload' class="button">
 </div> 
 </form>
+
+    </div>
+    </article>
+<br> <br> <br> <br> <br> <br><br> <br> <br> 
+<?php include "../html/footer.php"?>
