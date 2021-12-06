@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2021 at 10:44 PM
+-- Generation Time: Dec 06, 2021 at 11:02 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -50,7 +50,8 @@ INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_numbe
 (2, 'Albduah2', 'jaddh', 22321, 3215, 'break2.jpg', '', '', '', '2021-12-01 17:35:56', 3),
 (3, '2414121', 'jazan', 1212, 68904, 'break3.jpg', '', '', '', '2021-12-01 17:36:05', 4),
 (4, '2414121', '45grdsf', 1212, 689041, 'b2.jpg', '', '', '', '2021-11-26 17:24:26', 5),
-(5, 'tariq_break2', 'aldmam', 111, 4500, 'b4.jpg', 'b1.jpg', 'b2.jpg', 'استراحة5.jpg', '2021-12-01 18:18:53', 2);
+(3479, '148', 'aldmam', 0, 22141, 'b2.jpg', 'b2.jpg', 'b2.jpg', 'b2.jpg', '2021-12-05 18:50:16', 5),
+(3482, 'tariq__break', 'alriath', 400, 87979, 'break1.png', 'break2.jpg', 'break3.jpg', 'استراحة5.jpg', '2021-12-05 19:03:08', 12);
 
 -- --------------------------------------------------------
 
@@ -101,8 +102,7 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`break_id`, `break_name`, `price`, `location`, `start_date`, `end_date`, `timestamp`, `users_id`, `first_name`, `last_name`, `phone_number_user`) VALUES
-(1, 'Albduah', 555, 'alriath', '2017-04-02', '2017-04-12', '2021-12-03 21:43:40', 1, 'Tariq', 'Tariq', 2),
-(1, 'Albduah', 555, 'alriath', '2017-04-11', '2017-04-12', '2021-12-03 21:42:39', 1, 'Tariq', 'Tariq', 2);
+(1, 'Albduah', 555, 'alriath', '2017-04-12', '2017-04-14', '2021-12-05 19:03:30', 12, 'Tariq', 'Tariq', 151515);
 
 -- --------------------------------------------------------
 
@@ -127,10 +127,10 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`users_id`, `first_name`, `last_name`, `type`, `email`, `password`, `number`, `date`) VALUES
 (1, 'Tariq', 'Aldailage ', 'Client', 'my email lol', '123', 5000000, '2021-11-07 19:57:05'),
-(2, 'Tariq', 'Tariq', 'Client', '2', '2', 2, '2021-11-07 19:57:05'),
 (3, 'Tariq', 'Tariq', 'Client', '4', '4', 531421052, '2021-11-07 19:57:05'),
 (4, 'cj', 'Tariq', 'Client', 'c', 'c', 531421052, '2021-11-07 19:57:05'),
-(5, 'Tariq2', 'Tariq2', 'Client', '6', '6', 5314332105261, '2021-11-14 16:47:31');
+(5, 'Tariq2', 'Tariq2', 'Client', '6', '6', 5314332105261, '2021-11-14 16:47:31'),
+(12, 'Tariq', 'Tariq', 'Client', '2', '2', 151515, '2021-12-05 19:01:49');
 
 --
 -- Indexes for dumped tables
@@ -173,7 +173,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `break`
 --
 ALTER TABLE `break`
-  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3477;
+  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3483;
 
 --
 -- AUTO_INCREMENT for table `images`
@@ -185,7 +185,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `users_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
@@ -195,7 +195,7 @@ ALTER TABLE `users`
 -- Constraints for table `break`
 --
 ALTER TABLE `break`
-  ADD CONSTRAINT `users` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `users-id` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `reservations`
