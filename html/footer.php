@@ -1,3 +1,4 @@
+<article style="display: justify-content: center; margin-top: 30px;"> 
 <div class="footer-dark">
         <footer>
             <div class="container">
