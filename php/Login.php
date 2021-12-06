@@ -38,9 +38,9 @@ session_start();
        
       } else {
         echo "<script>
-        alert('حدث خطأ لا يمكن التحديث');
-        window.location.href='../html/update.php';
-        </script>";      }
+        alert('حدث خطأ البريد الألكتروني غير صحيح او كلمة المرور');
+        window.location.href='../html/Break-login.php';
+        </script>";     }
     } else { 	echo "<script>
       alert('حدث خطأ البريد الألكتروني غير صحيح او كلمة المرور');
       window.location.href='../html/Break-login.php';
