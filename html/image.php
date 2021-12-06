@@ -14,17 +14,19 @@
       
 
   <h1> Update-resravtion</h1>
-  <article style="display: flex; justify-content: center; margin-top: 30px;"> 
+  <article style="display: flex; justify-content: center; margin-top: 50px;"> 
  
   <div class="warning">
   <form method='post' action='../php/image.php' enctype='multipart/form-data'>
  <?php include "../php/connect.php";
     $img = mysqli_query($conn, "SELECT image,image2,image3,image4 FROM break where owner_id=".$_SESSION['id']."");
        while ($row = mysqli_fetch_array($img)) {     
-          echo "<img src='../image/".$row['image']."' style='width:400px;height:400px;' >";
-          echo "<img src='../image/".$row['image2']."' style='width:400px;height:400px;' >";   
-          echo "<img src='../image/".$row['image3']."' style='width:400px;height:400px;' >";   
-          echo "<img src='../image/".$row['image4']."' style='width:400px;height:400px;' >";   
+        
+
+        echo "<img src='../image/".$row['image']."' style='width:50px;height:50px;' >";
+          echo "<img src='../image/".$row['image2']."' style='width:50px;height:50px;' >";   
+          echo "<img src='../image/".$row['image3']."' style='width:50px;height:50px;' >";   
+          echo "<img src='../image/".$row['image4']."' style='width:50px;height:50px;' >";   
 
       } 
 ?> 
@@ -37,8 +39,11 @@
                   <option value="<?php echo $data[0];?>"><?php echo $data[0];?></option>
                 <?php
       }  ?>     </select>
-      <br>
+  
+  <br>
+  
 <div class="form-group">
+
  <input type="file" name="image" >
  <input type="file" name="image2" >
  <input type="file" name="image3" >
@@ -52,5 +57,5 @@
 
     </div>
     </article>
-<br> <br> <br> <br> <br> <br><br> <br> <br> 
+<br> <br> <br> <br> <br> <br>
 <?php include "../html/footer.php"?>

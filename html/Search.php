@@ -65,7 +65,7 @@ include "../html/header.php";
   
           </div>
         </article>    
-        <br> <br> <br> <br> <br> <br><br> <br> <br> 
+        <br> <br> <br> <br> <br> <br><br> <br> 
 <?php include "../html/footer.php"?>
   </body>
 </html>
