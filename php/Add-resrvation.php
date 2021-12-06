@@ -25,6 +25,7 @@ move_uploaded_file($_FILES["image"]["tmp_name"],'../image/'.$filename) ;
 move_uploaded_file($_FILES["image2"]["tmp_name"],'../image/'.$filename2) ;
 move_uploaded_file($_FILES["image3"]["tmp_name"],'../image/'.$filename3) ;
 move_uploaded_file($_FILES["image4"]["tmp_name"],'../image/'.$filename4) ;
+}
    // $id =$_POST['id'];
 	$break_name =$_POST['break_name'];
 	$Location = $_POST['Location'];
@@ -43,15 +44,17 @@ move_uploaded_file($_FILES["image4"]["tmp_name"],'../image/'.$filename4) ;
 		//echo $execval;
 	//	echo "Registration successfully...";
 		//$stmt->close();
-		$sql = "INSERT INTO break (break_name, location, price, phone_number,image,image2,image3,image4,users_id )	 VALUES ('$break_name', '$Location', '$Price', '$Number', '$filename', '$filename2','$filename3','$filename4','$_SESSION[id]')";
+		$sql = "INSERT  INTO break (break_name, location, price, phone_number,image,image2,image3,image4,users_id )	 VALUES ('$break_name', '$Location', '$Price', '$Number', '$filename', '$filename2','$filename3','$filename4','$_SESSION[id]')";
 		if (mysqli_query($conn, $sql)) {
 			echo "<script>
 	alert('تمت اضافة استراحة');
 	window.location.href='../html/index.php';
 	</script>";
  } else {
-			echo "Error: " . $sql . "
-	" . mysqli_error($conn);
+	echo "<script>
+	alert('حدث خطأ في اضافة الأستراحة');
+window.location.href='../html/Add-resrvation.php';
+	</script>";
 		 }
 		 mysqli_close($conn);
 		 
@@ -59,7 +62,7 @@ move_uploaded_file($_FILES["image4"]["tmp_name"],'../image/'.$filename4) ;
 	//	$conn->close();
 	//	echo '<br> <a href="../html/Break-main.html">Click here to go the Homepage</a>';
 
-	}
+	
  	//header("Location: ../html/index.php");
 
 }

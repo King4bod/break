@@ -27,15 +27,18 @@ move_uploaded_file($_FILES["image2"]["tmp_name"],'../image/'.$filename2) ;
 move_uploaded_file($_FILES["image3"]["tmp_name"],'../image/'.$filename3) ;
 move_uploaded_file($_FILES["image4"]["tmp_name"],'../image/'.$filename4) ;
     // Image db insert sql
-    $insert = "update break set image='".$filename."',image2='".$filename2."',image3='".$filename3."',image4='".$filename4."' where users_id=".$_SESSION['id']." AND break_name='$mybreak'";
+    $insert = "update break set image='".$filename."',image2='".$filename2."',image3='".$filename3."',image4='".$filename4."' where owner_id=".$_SESSION['id']." AND break_name='$mybreak'";
     if(mysqli_query($conn, $insert)){
         echo "<script>
-        alert('تمت  تحديث الصورة');
+        alert('تمت  تحديث الصور');
     window.location.href='../html/image.php';
         </script>";
     }
     else{
-      echo 'Error: '.mysqli_error($conn);
+        echo "<script>
+        alert('حدث خطأ لا يمكن تحديث الصور');
+    window.location.href='../html/image.php';
+        </script>";
     }
 }else{
     echo 'Error in uploading file - '.$_FILES['image']['name'].'

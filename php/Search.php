@@ -35,7 +35,7 @@ while($data = mysqli_fetch_array($records))
             
              echo $data[2]. "= الموقع<br>";
              echo $data[3]. " = السعر<br>";
-             echo $data['users_id']. " = رقم المالك<br>";
+             echo $data['owner_id']. " = رقم المالك<br>";
              ?> </p> 
              <a href="#" class="btn btn-warning">احجز</a>
          </article> <?php

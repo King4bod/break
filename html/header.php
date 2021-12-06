@@ -66,8 +66,8 @@
         echo '<li  class="nav-item"><a href="../html/invoice.php">My Reservation</a></li>';
 
     } else {
-      echo '<a class="nav-link" href="../html/Break-login.html">Login</a></li>';
-      echo '<li  class="nav-item"><a href="../html/Break-register.html">Register</a></li> ';
+      echo '<a class="nav-link" href="../html/Break-login.php">Login</a></li>';
+      echo '<li  class="nav-item"><a href="../html/Break-register.php">Register</a></li> ';
     }?>
 
          <li class="nav-item">

@@ -14,19 +14,21 @@ require 'connect.php';
 	//$Role=$_POST['Role'];
 	
 
-    $query= "update break set break_name='".$break_name."',location='".$location."',price='".$price."',phone_number='".$phone_number."' where users_id='".$_SESSION['id']."' AND break_name='".$mybreak."'
+    $query= "update break set break_name='".$break_name."',location='".$location."',price='".$price."',phone_number='".$phone_number."' where owner_id='".$_SESSION['id']."' AND break_name='".$mybreak."'
 			";
 	$result= mysqli_query($conn, $query);
 
 	if( !$result){
-		echo 'data is inerted';
-		//header('Location: ../html/index.php');
-		exit();
+		echo "<script>
+		alert('تم تحديث المعلومات  ');
+		window.location.href='../html/update.php';
+		</script>";
 	}
 	else {
-		echo"Database query filed";
-		header('Location: ../html/index.php');
-		exit();
+		echo "<script>
+		alert('حدث خطأ لا يمكن التحديث');
+		window.location.href='../html/update.php';
+		</script>";
 	}
 
 
