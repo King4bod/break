@@ -44,7 +44,7 @@ move_uploaded_file($_FILES["image4"]["tmp_name"],'../image/'.$filename4) ;
 		//echo $execval;
 	//	echo "Registration successfully...";
 		//$stmt->close();
-		$sql = "INSERT  INTO break (break_name, location, price, phone_number,image,image2,image3,image4,users_id )	 VALUES ('$break_name', '$Location', '$Price', '$Number', '$filename', '$filename2','$filename3','$filename4','$_SESSION[id]')";
+		$sql = "INSERT  INTO break (break_name, location, price, phone_number,image,image2,image3,image4,owner_id )	 VALUES ('$break_name', '$Location', '$Price', '$Number', '$filename', '$filename2','$filename3','$filename4','$_SESSION[id]')";
 		if (mysqli_query($conn, $sql)) {
 			echo "<script>
 	alert('تمت اضافة استراحة');

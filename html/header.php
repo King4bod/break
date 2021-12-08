@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
     <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="..//css/div.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -62,8 +60,8 @@
 
     <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
         echo '<a class="nav-link" href="../php/Logout.php">Log out</a>';
-        echo '<li  class="nav-item"><a href="../html/my_resrvation.php">My Break</a></li>';
-        echo '<li  class="nav-item"><a href="../html/invoice.php">My Reservation</a></li>';
+        echo '<li  class="nav-item"><a href="../html/my_break.php">My Break</a></li>';
+        echo '<li  class="nav-item"><a href="../html/my_reservation.php">My Reservation</a></li>';
 
     } else {
       echo '<a class="nav-link" href="../html/Break-login.php">Login</a></li>';

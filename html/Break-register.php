@@ -2,6 +2,8 @@
 <html>  
    <link rel="stylesheet" href="../css/log-reg.css">
 <?php  include "header.php";?>
+<title>Register</title>
+
  <!--
       <title>Register</title>
     Required meta tags 

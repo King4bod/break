@@ -2,6 +2,7 @@
 <html>    <link rel="stylesheet" href="../css/log-reg.css">
 
 <?php  include "header.php";?>
+<title>Login</title>
 
    <!--   <title>Login</title>
    

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Add-resravtion</title>
+    <title>Invoice</title>
 <?php include "header.php";?>
    
     <link rel="stylesheet" href="../css/add.css">
   
  
-  </head>
   <body>
  
       

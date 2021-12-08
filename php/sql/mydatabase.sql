@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2021 at 08:35 PM
+-- Generation Time: Dec 08, 2021 at 06:37 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -50,32 +50,7 @@ INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_numbe
 (3, '2414121', 'jazan', 1212, 68904, 'break3.jpg', '', '', '', '2021-12-01 17:36:05', 4),
 (4, '2414121', '45grdsf', 1212, 689041, 'b2.jpg', '', '', '', '2021-11-26 17:24:26', 5),
 (3479, '148', 'aldmam', 0, 22141, 'b2.jpg', 'b2.jpg', 'b2.jpg', 'b2.jpg', '2021-12-05 18:50:16', 5),
-(3482, 'tariq__break', 'alriath', 400, 87979, 'break1.png', 'break2.jpg', 'break3.jpg', 'استراحة5.jpg', '2021-12-05 19:03:08', 12),
-(3483, 'cj52', 'aldmam', 446, 0, 'delete-but.png', 'delete-but.png', 'delete-but.png', 'delete-but.png', '2021-12-06 18:57:54', 12);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `images`
---
-
-CREATE TABLE `images` (
-  `id` int(11) NOT NULL,
-  `image` varchar(200) NOT NULL,
-  `break-id` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `images`
---
-
-INSERT INTO `images` (`id`, `image`, `break-id`) VALUES
-(1, 'استراحة5.jpg', 1),
-(2, '460468.jpg', 2),
-(3, '../php/sql/497505_quran-wallpapers-hd-in-urdu-gallery-iphhone-download-tumblr-desktop_2510x3000_h.jpg', 3),
-(4, '../php/sql/استراحة5.jpg', 4),
-(5, 'استراحة5.jpg', 5),
-(6, 'استراحة5.jpg', 3476);
+(3482, 'tariq__break', 'alriath', 400, 87979, '497505_quran-wallpapers-hd-in-urdu-gallery-iphhone-download-tumblr-desktop_2510x3000_h.jpg', 'add1.png', 'add2.png', 'add-but.png', '2021-12-08 17:33:54', 12);
 
 -- --------------------------------------------------------
 
@@ -102,9 +77,7 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`break_id`, `break_name`, `price`, `location`, `start_date`, `end_date`, `timestamp`, `owner_id`, `first_name`, `last_name`, `phone_number_user`) VALUES
-(3482, 'tariq__break', 400, 'alriath', '2017-04-03', '2017-04-01', '2021-12-06 18:51:28', 12, 'Tariq', 'Tariq', 151515),
-(1, 'Albduah', 555, 'alriath', '2017-04-12', '2017-04-14', '2021-12-05 19:03:30', 12, 'Tariq', 'Tariq', 151515),
-(1, 'Albduah', 555, 'alriath', '2017-04-17', '2017-04-01', '2021-12-06 18:49:23', 12, 'Tariq', 'Tariq', 151515);
+(3482, 'tariq__break', 400, 'alriath', '2017-04-03', '2017-04-01', '2021-12-06 18:51:28', 12, 'Tariq', 'Tariq', 151515);
 
 -- --------------------------------------------------------
 
@@ -148,13 +121,6 @@ ALTER TABLE `break`
   ADD KEY `users_id` (`owner_id`);
 
 --
--- Indexes for table `images`
---
-ALTER TABLE `images`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `break` (`break-id`);
-
---
 -- Indexes for table `reservations`
 --
 ALTER TABLE `reservations`
@@ -177,13 +143,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `break`
 --
 ALTER TABLE `break`
-  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3487;
-
---
--- AUTO_INCREMENT for table `images`
---
-ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3488;
 
 --
 -- AUTO_INCREMENT for table `users`

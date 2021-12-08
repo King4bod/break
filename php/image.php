@@ -41,8 +41,10 @@ move_uploaded_file($_FILES["image4"]["tmp_name"],'../image/'.$filename4) ;
         </script>";
     }
 }else{
-    echo 'Error in uploading file - '.$_FILES['image']['name'].'
-';
+    echo "<script>
+    alert('يجب اختيار 4 صور');
+window.location.href='../html/image.php';
+    </script>";
 }
 }
  //  $sql = "update break set image='".$filename."' where users_id='".$_SESSION['id']."";
