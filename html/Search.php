@@ -35,7 +35,7 @@ include "../html/header.php";
     
     <img src="../image/break 44.png"class="img">
             
-            <form action="../php/Search.php" method="post">
+            <form action="" method="post">
                 <label for="email "class="form-label">Name </label> 
                 <input class="form-control"
                   type="text"
@@ -57,12 +57,14 @@ include "../html/header.php";
                    <option value="jazan">جازان</option>
                    </select>
                    <br>
-                   <button type="submit" class="button">submit</button>
-          
-          
+                   <button type="submit" name="submit" class="button">submit</button>
+                   <br>                    <br>
+                   <br>
+
+
+                   <?php include "../php/Search.php" ;?>
+
                 </form>
-       
-  
           </div>
         </article>    
         <br> <br> <br> <br> <br> <br><br> <br> 
