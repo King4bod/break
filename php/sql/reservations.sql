@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2021 at 08:21 PM
+-- Generation Time: Dec 10, 2021 at 07:41 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -28,22 +28,25 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `reservations` (
-  `break-id` int(200) NOT NULL,
-  `name` varchar(200) NOT NULL,
+  `break_id` int(200) NOT NULL,
+  `break_name` varchar(200) NOT NULL,
   `price` int(200) NOT NULL,
   `location` varchar(200) NOT NULL,
-  `strat_date` date NOT NULL,
-  `end_date` date NOT NULL,
-  `rental` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `users-id` int(200) NOT NULL
+  `start_date` varchar(200) NOT NULL,
+  `end_date` varchar(200) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `owner_id` int(200) NOT NULL,
+  `first_name` varchar(200) NOT NULL,
+  `last_name` varchar(200) NOT NULL,
+  `phone_number_user` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `reservations`
 --
 
-INSERT INTO `reservations` (`break-id`, `name`, `price`, `location`, `strat_date`, `end_date`, `rental`, `users-id`) VALUES
-(1, 'Albduah', 200, 'go', '0000-00-00', '0000-00-00', '2021-11-14 17:49:36', 2);
+INSERT INTO `reservations` (`break_id`, `break_name`, `price`, `location`, `start_date`, `end_date`, `timestamp`, `owner_id`, `first_name`, `last_name`, `phone_number_user`) VALUES
+(3482, 'tariq__break', 400, 'alriath', '2017-04-03', '2017-04-01', '2021-12-06 18:51:28', 12, 'Tariq', 'Tariq', 151515);
 
 --
 -- Indexes for dumped tables
@@ -53,8 +56,9 @@ INSERT INTO `reservations` (`break-id`, `name`, `price`, `location`, `strat_date
 -- Indexes for table `reservations`
 --
 ALTER TABLE `reservations`
-  ADD PRIMARY KEY (`break-id`),
-  ADD KEY `v` (`users-id`);
+  ADD PRIMARY KEY (`start_date`),
+  ADD KEY `v` (`owner_id`),
+  ADD KEY `v2` (`break_id`);
 
 --
 -- Constraints for dumped tables
@@ -64,8 +68,8 @@ ALTER TABLE `reservations`
 -- Constraints for table `reservations`
 --
 ALTER TABLE `reservations`
-  ADD CONSTRAINT `a` FOREIGN KEY (`break-id`) REFERENCES `break` (`break-id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `v` FOREIGN KEY (`users-id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `v` FOREIGN KEY (`owner_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `v2` FOREIGN KEY (`break_id`) REFERENCES `break` (`break-id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

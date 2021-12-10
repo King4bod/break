@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2021 at 08:21 PM
+-- Generation Time: Dec 10, 2021 at 07:41 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -43,11 +43,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`users_id`, `first_name`, `last_name`, `type`, `email`, `password`, `number`, `date`) VALUES
-(1, 'Tariq', 'Aldailage ', 'Client', 'my email lol', '123', 5000000, '2021-11-07 19:57:05'),
-(2, 'Tariq', 'Tariq', 'Client', '2', '2', 2, '2021-11-07 19:57:05'),
-(3, 'Tariq', 'Tariq', 'Client', '4', '4', 531421052, '2021-11-07 19:57:05'),
-(4, 'cj', 'Tariq', 'Client', 'c', 'c', 531421052, '2021-11-07 19:57:05'),
-(5, 'Tariq2', 'Tariq2', 'Client', '6', '6', 5314332105261, '2021-11-14 16:47:31');
+(1, 'Tariq', 'Aldailage ', 'Client', 'my email lol', '202cb962ac59075b964b07152d234b70', 5000000, '2021-12-06 18:26:45'),
+(4, 'cj', 'Tariq', 'Client', 'c', '4a8a08f09d37b73795649038408b5f33', 531421052, '2021-12-06 18:26:45'),
+(5, 'Tariq2', 'Tariq2', 'Client', '6', '1679091c5a880faf6fb5e6087eb1b2dc', 5314332105261, '2021-12-06 18:26:45'),
+(12, 'Tariq', 'Tariq', 'Client', '2', 'c81e728d9d4c2f636f067f89cc14862c', 151515, '2021-12-06 18:26:45'),
+(15, 'cj', 'cj', 'lessor', '4', '011ecee7d295c066ae68d4396215c3d0', 4679, '2021-12-06 18:26:45'),
+(16, 'zz', 'zz', 'lessor', 'yy', '28dd2c7955ce926456240b2ff0100bde', 989997, '2021-12-06 19:34:34');
 
 --
 -- Indexes for dumped tables
@@ -57,7 +58,8 @@ INSERT INTO `users` (`users_id`, `first_name`, `last_name`, `type`, `email`, `pa
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`users_id`);
+  ADD PRIMARY KEY (`users_id`),
+  ADD KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -67,7 +69,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `users_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

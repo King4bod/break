@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2021 at 08:54 PM
+-- Generation Time: Dec 10, 2021 at 07:41 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -38,19 +38,20 @@ CREATE TABLE `break` (
   `image3` varchar(200) NOT NULL,
   `image4` varchar(200) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `users_id` int(200) NOT NULL
+  `owner_id` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `break`
 --
 
-INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_number`, `image`, `image2`, `image3`, `image4`, `date`, `users_id`) VALUES
-(1, 'Albduah', 'Albduah', 555, 32, 'break1.png', '', '', '', '2021-11-28 19:24:47', 1),
-(2, 'Albduah2', 'break4', 22321, 3215, 'break2.jpg', '', '', '', '2021-11-26 17:23:18', 3),
-(3, '2414121', '45grdsf', 1212, 68904, 'break3.jpg', '', '', '', '2021-11-26 17:23:46', 4),
+INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_number`, `image`, `image2`, `image3`, `image4`, `date`, `owner_id`) VALUES
+(1, 'Albduah', 'alriath', 555, 32, 'break1.png', '', '', '', '2021-12-01 17:35:45', 1),
+(3, '2414121', 'jazan', 1212, 68904, 'break3.jpg', '', '', '', '2021-12-01 17:36:05', 4),
 (4, '2414121', '45grdsf', 1212, 689041, 'b2.jpg', '', '', '', '2021-11-26 17:24:26', 5),
-(5, 'tariq_break2', 'aldmam', 111, 4500, 'break1.png', 'b2.jpg', 'b2.jpg', 'b1.jpg', '2021-11-29 19:51:24', 2);
+(3479, '148', 'aldmam', 0, 22141, 'b2.jpg', 'b2.jpg', 'b2.jpg', 'b2.jpg', '2021-12-05 18:50:16', 5),
+(3482, 'tariq__break', 'alriath', 400, 87979, '497505_quran-wallpapers-hd-in-urdu-gallery-iphhone-download-tumblr-desktop_2510x3000_h.jpg', 'add1.png', 'add2.png', 'add-but.png', '2021-12-08 17:33:54', 12),
+(3488, 'tariq_break214', 'jazan', 131, 16283, 'b3.jpg', '', '', '', '2021-12-10 18:27:29', 12);
 
 --
 -- Indexes for dumped tables
@@ -62,7 +63,7 @@ INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_numbe
 ALTER TABLE `break`
   ADD PRIMARY KEY (`break-id`),
   ADD UNIQUE KEY `phone_number` (`phone_number`),
-  ADD KEY `users_id` (`users_id`);
+  ADD KEY `users_id` (`owner_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -72,7 +73,7 @@ ALTER TABLE `break`
 -- AUTO_INCREMENT for table `break`
 --
 ALTER TABLE `break`
-  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3477;
+  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3489;
 
 --
 -- Constraints for dumped tables
@@ -82,7 +83,7 @@ ALTER TABLE `break`
 -- Constraints for table `break`
 --
 ALTER TABLE `break`
-  ADD CONSTRAINT `users` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `users-id` FOREIGN KEY (`owner_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
