@@ -21,18 +21,18 @@
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
-            <form action="../php/delete.php" method="post">
-  <label name="mybreak"  class="form-label">your break </label>
+            <form action="../php/del.php" method="post">
+  <label name="mybreak"  class="form-label">اسم الحجز </label>
                 <select name="mybreak">        
          <?php  include "../php/connect.php";
-           $records = mysqli_query($conn,"select break_name from break  where owner_id=".$_SESSION['id'].""); // fetch data from database
+           $records = mysqli_query($conn,"select break_name from reservations  where owner_id=".$_SESSION['id'].""); // fetch data from database
         while($data = mysqli_fetch_array($records))
       {   ?>
                   <option value="<?php echo $data[0];?>"><?php echo $data[0];?></option>
                 <?php
       }  ?>     </select>
       <br>
-      <button type="submit" class="Delete">Delete </button>
+      <button type="submit" class="Delete">مسح </button>
 
 
 </form> 

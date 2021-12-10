@@ -29,7 +29,7 @@ session_start();
       if($stmt_result->num_rows > 0){
           $data = $stmt_result->fetch_assoc();
 
-       if($data['password']=== $password){
+       if($data['password']=== md5($password)){
 		header("Location: ../html/index.php");
   //  echo "<h1> Your First name is : </h1>" . $_SESSION["name"] ."<br>" ;
    // echo "<h1>Your Last name is  : </h1>" . $_SESSION["last"]  ;
@@ -37,9 +37,14 @@ session_start();
         
        
       } else {
-          echo "<h2>false Email or password</h2>";
-      }
-    } else { echo "<h2>false Email or password</h2>";
+        echo "<script>
+        alert('حدث خطأ البريد الألكتروني غير صحيح او كلمة المرور');
+        window.location.href='../html/Break-login.php';
+        </script>";     }
+    } else { 	echo "<script>
+      alert('حدث خطأ البريد الألكتروني غير صحيح او كلمة المرور');
+      window.location.href='../html/Break-login.php';
+      </script>";
     }
 }
 

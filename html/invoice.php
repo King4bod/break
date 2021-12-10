@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Add-resravtion</title>
+    <title>Invoice</title>
 <?php include "header.php";?>
    
     <link rel="stylesheet" href="../css/add.css">
   
  
-  </head>
   <body>
  
       
@@ -28,7 +26,7 @@
                   <?php include "../php/connect.php";
                   $id=$_SESSION['id'];
                
-                  $records = mysqli_query($conn,"select * from reservations  where users_id ='$id'"); // fetch data from database
+                  $records = mysqli_query($conn,"select * from reservations  where owner_id ='$id'"); // fetch data from database
                    if($records->num_rows > 0){
                    while($data = mysqli_fetch_array($records))
                {   
@@ -40,7 +38,7 @@
                      echo "Break location :".$data['location'].'<br>';
                      echo "Start date =".$data['start_date'].'<br>';
                      echo "End date =".$data['end_date'].'<br>';
-                     echo "Your id =".$data['users_id'].'<br>';
+                     echo "Your id =".$data['owner_id'].'<br>';
                      echo '-----------------------------';
                }
               }    else {

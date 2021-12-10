@@ -35,7 +35,7 @@ $conn = new mysqli('localhost','root','','mydatabase');
        ?> </p> 
      <p>
  <form action="../html/rev.php">
- <button type="submit" class="button">Contact</button>
+ <button type="submit" class="button">حجز</button>
  </form>
    
  

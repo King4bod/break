@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2021 at 11:02 AM
+-- Generation Time: Dec 08, 2021 at 08:44 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -38,44 +38,19 @@ CREATE TABLE `break` (
   `image3` varchar(200) NOT NULL,
   `image4` varchar(200) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `users_id` int(200) NOT NULL
+  `owner_id` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `break`
 --
 
-INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_number`, `image`, `image2`, `image3`, `image4`, `date`, `users_id`) VALUES
+INSERT INTO `break` (`break-id`, `break_name`, `location`, `price`, `phone_number`, `image`, `image2`, `image3`, `image4`, `date`, `owner_id`) VALUES
 (1, 'Albduah', 'alriath', 555, 32, 'break1.png', '', '', '', '2021-12-01 17:35:45', 1),
-(2, 'Albduah2', 'jaddh', 22321, 3215, 'break2.jpg', '', '', '', '2021-12-01 17:35:56', 3),
 (3, '2414121', 'jazan', 1212, 68904, 'break3.jpg', '', '', '', '2021-12-01 17:36:05', 4),
 (4, '2414121', '45grdsf', 1212, 689041, 'b2.jpg', '', '', '', '2021-11-26 17:24:26', 5),
 (3479, '148', 'aldmam', 0, 22141, 'b2.jpg', 'b2.jpg', 'b2.jpg', 'b2.jpg', '2021-12-05 18:50:16', 5),
-(3482, 'tariq__break', 'alriath', 400, 87979, 'break1.png', 'break2.jpg', 'break3.jpg', 'استراحة5.jpg', '2021-12-05 19:03:08', 12);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `images`
---
-
-CREATE TABLE `images` (
-  `id` int(11) NOT NULL,
-  `image` varchar(200) NOT NULL,
-  `break-id` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `images`
---
-
-INSERT INTO `images` (`id`, `image`, `break-id`) VALUES
-(1, 'استراحة5.jpg', 1),
-(2, '460468.jpg', 2),
-(3, '../php/sql/497505_quran-wallpapers-hd-in-urdu-gallery-iphhone-download-tumblr-desktop_2510x3000_h.jpg', 3),
-(4, '../php/sql/استراحة5.jpg', 4),
-(5, 'استراحة5.jpg', 5),
-(6, 'استراحة5.jpg', 3476);
+(3482, 'tariq__break', 'alriath', 400, 87979, '497505_quran-wallpapers-hd-in-urdu-gallery-iphhone-download-tumblr-desktop_2510x3000_h.jpg', 'add1.png', 'add2.png', 'add-but.png', '2021-12-08 17:33:54', 12);
 
 -- --------------------------------------------------------
 
@@ -91,7 +66,7 @@ CREATE TABLE `reservations` (
   `start_date` varchar(200) NOT NULL,
   `end_date` varchar(200) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `users_id` int(200) NOT NULL,
+  `owner_id` int(200) NOT NULL,
   `first_name` varchar(200) NOT NULL,
   `last_name` varchar(200) NOT NULL,
   `phone_number_user` int(200) NOT NULL
@@ -101,8 +76,11 @@ CREATE TABLE `reservations` (
 -- Dumping data for table `reservations`
 --
 
-INSERT INTO `reservations` (`break_id`, `break_name`, `price`, `location`, `start_date`, `end_date`, `timestamp`, `users_id`, `first_name`, `last_name`, `phone_number_user`) VALUES
-(1, 'Albduah', 555, 'alriath', '2017-04-12', '2017-04-14', '2021-12-05 19:03:30', 12, 'Tariq', 'Tariq', 151515);
+INSERT INTO `reservations` (`break_id`, `break_name`, `price`, `location`, `start_date`, `end_date`, `timestamp`, `owner_id`, `first_name`, `last_name`, `phone_number_user`) VALUES
+(1, 'Albduah', 555, 'alriath', '', '2017-04-08', '2021-12-08 19:02:49', 12, 'Tariq', 'Tariq', 151515),
+(3482, 'tariq__break', 400, 'alriath', '2017-04-03', '2017-04-01', '2021-12-06 18:51:28', 12, 'Tariq', 'Tariq', 151515),
+(3479, '148', 0, 'aldmam', '2017-04-11', '2017-04-12', '2021-12-08 19:28:02', 12, 'Tariq', 'Tariq', 151515),
+(1, 'Albduah', 555, 'alriath', '2017-04-19', '2017-04-20', '2021-12-08 19:29:21', 12, 'Tariq', 'Tariq', 151515);
 
 -- --------------------------------------------------------
 
@@ -126,11 +104,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`users_id`, `first_name`, `last_name`, `type`, `email`, `password`, `number`, `date`) VALUES
-(1, 'Tariq', 'Aldailage ', 'Client', 'my email lol', '123', 5000000, '2021-11-07 19:57:05'),
-(3, 'Tariq', 'Tariq', 'Client', '4', '4', 531421052, '2021-11-07 19:57:05'),
-(4, 'cj', 'Tariq', 'Client', 'c', 'c', 531421052, '2021-11-07 19:57:05'),
-(5, 'Tariq2', 'Tariq2', 'Client', '6', '6', 5314332105261, '2021-11-14 16:47:31'),
-(12, 'Tariq', 'Tariq', 'Client', '2', '2', 151515, '2021-12-05 19:01:49');
+(1, 'Tariq', 'Aldailage ', 'Client', 'my email lol', '202cb962ac59075b964b07152d234b70', 5000000, '2021-12-06 18:26:45'),
+(4, 'cj', 'Tariq', 'Client', 'c', '4a8a08f09d37b73795649038408b5f33', 531421052, '2021-12-06 18:26:45'),
+(5, 'Tariq2', 'Tariq2', 'Client', '6', '1679091c5a880faf6fb5e6087eb1b2dc', 5314332105261, '2021-12-06 18:26:45'),
+(12, 'Tariq', 'Tariq', 'Client', '2', 'c81e728d9d4c2f636f067f89cc14862c', 151515, '2021-12-06 18:26:45'),
+(15, 'cj', 'cj', 'lessor', '4', '011ecee7d295c066ae68d4396215c3d0', 4679, '2021-12-06 18:26:45'),
+(16, 'zz', 'zz', 'lessor', 'yy', '28dd2c7955ce926456240b2ff0100bde', 989997, '2021-12-06 19:34:34');
 
 --
 -- Indexes for dumped tables
@@ -142,28 +121,22 @@ INSERT INTO `users` (`users_id`, `first_name`, `last_name`, `type`, `email`, `pa
 ALTER TABLE `break`
   ADD PRIMARY KEY (`break-id`),
   ADD UNIQUE KEY `phone_number` (`phone_number`),
-  ADD KEY `users_id` (`users_id`);
-
---
--- Indexes for table `images`
---
-ALTER TABLE `images`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `break` (`break-id`);
+  ADD KEY `users_id` (`owner_id`);
 
 --
 -- Indexes for table `reservations`
 --
 ALTER TABLE `reservations`
   ADD PRIMARY KEY (`start_date`),
-  ADD KEY `v` (`users_id`),
+  ADD KEY `v` (`owner_id`),
   ADD KEY `v2` (`break_id`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`users_id`);
+  ADD PRIMARY KEY (`users_id`),
+  ADD KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -173,19 +146,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `break`
 --
 ALTER TABLE `break`
-  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3483;
-
---
--- AUTO_INCREMENT for table `images`
---
-ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `break-id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3488;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `users_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables
@@ -195,13 +162,13 @@ ALTER TABLE `users`
 -- Constraints for table `break`
 --
 ALTER TABLE `break`
-  ADD CONSTRAINT `users-id` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `users-id` FOREIGN KEY (`owner_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `reservations`
 --
 ALTER TABLE `reservations`
-  ADD CONSTRAINT `v` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `v` FOREIGN KEY (`owner_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `v2` FOREIGN KEY (`break_id`) REFERENCES `break` (`break-id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 

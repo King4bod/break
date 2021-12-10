@@ -14,7 +14,6 @@
     $s3=$data['location'];
     $s4=$data['price'];
     $s5=$data['phone_number'];
-    $s6=$data['users_id'];
 
 
 	//	$stmt = $conn->prepare("insert into reservations(break-id) values(".$s1.")");
@@ -26,15 +25,17 @@
 	//	$stmt->close();
 		//$conn->close();
         //		$stmt = $conn->prepare("insert into reservations(break-id, break_name, price, location, start_date, end_date,users_id,first_name,last_name,phone_number_user) values(".$s1.", ".$s2.", ".$s4.", ".$s3.", ".$start.", ".$end.",".$s6.",".$_SESSION['name'].",".$_SESSION['lname'].",".$_SESSION['phone'].")");
-        $sql = "INSERT INTO reservations (break_id, break_name, price, location, start_date, end_date,users_id,first_name,last_name,phone_number_user)	 VALUES ('$s1', '$s2', '$s4', '$s3', '$start', '$end','$_SESSION[id]','$_SESSION[name]','$_SESSION[lname]','$_SESSION[phone]')";
+        $sql = "INSERT INTO reservations (break_id, break_name, price, location, start_date, end_date,owner_id,first_name,last_name,phone_number_user)	 VALUES ('$s1', '$s2', '$s4', '$s3', '$start', '$end','$_SESSION[id]','$_SESSION[name]','$_SESSION[lname]','$_SESSION[phone]')";
 	 if (mysqli_query($conn, $sql)) {
 		echo "<script>
-	alert('تمت اضافة استراحة');
-	window.location.href='../html/index.php';
-	</script>";
-	 } else {
-		echo "Error: " . $sql . "
-" . mysqli_error($conn);
+		alert('تمت اضافة حجز');
+		window.location.href='../html/invoice.php';
+		</script>";
+		 } else {
+			echo "<script>
+			alert('هناك حجز بالفعل في تاريخ ".$start."  او لم يتم ادخال تاريخ بشكل صحيح');
+			window.location.href='../html/rev.php';
+			</script>";
 	 }
 	 mysqli_close($conn);
      

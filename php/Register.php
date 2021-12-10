@@ -20,15 +20,17 @@
 	//	echo "Registration successfully...";
 	//	$stmt->close();
 		//$conn->close();
-		$sql = "INSERT INTO users (first_name, last_name, type, email, password, number )	 VALUES ('$firstName', '$lastName', '$type', '$email', '$password', '$number')";
+		$sql = "INSERT INTO users (first_name, last_name, type, email, password, number )	 VALUES ('$firstName', '$lastName', '$type', '$email', MD5('$password'), '$number')";
 		if (mysqli_query($conn, $sql)) {
 			echo "<script>
 	alert('تمت اضافة حساب');
 	window.location.href='../html/index.php';
 	</script>";
  } else {
-			echo "Error: " . $sql . "
-	" . mysqli_error($conn);
+	echo "<script>
+	alert('حدث خطأ لا يمكن اضافة حساب');
+	window.location.href='../html/Break-register.php';
+	</script>";
 		 }
 		 mysqli_close($conn);
 		 

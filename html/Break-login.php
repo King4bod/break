@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../css/log-reg.css">
-  
-  
-    <title>Login</title>
+<html>    <link rel="stylesheet" href="../css/log-reg.css">
+
+<?php  include "header.php";?>
+<title>Login</title>
+
+   <!--   <title>Login</title>
    
-      <!-- Bootstrap core CSS -->
+    Bootstrap core CSS 
 <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
-
-
-
-
-
-
-</head>
+-->
 
 
 <body>
@@ -68,5 +62,13 @@
       
         </article>
       </Main> 
+      <br>       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+<?php  include "footer.php"; ?>
       
   </body>
