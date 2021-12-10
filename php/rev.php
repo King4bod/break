@@ -28,7 +28,10 @@
         //		$stmt = $conn->prepare("insert into reservations(break-id, break_name, price, location, start_date, end_date,users_id,first_name,last_name,phone_number_user) values(".$s1.", ".$s2.", ".$s4.", ".$s3.", ".$start.", ".$end.",".$s6.",".$_SESSION['name'].",".$_SESSION['lname'].",".$_SESSION['phone'].")");
         $sql = "INSERT INTO reservations (break_id, break_name, price, location, start_date, end_date,users_id,first_name,last_name,phone_number_user)	 VALUES ('$s1', '$s2', '$s4', '$s3', '$start', '$end','$_SESSION[id]','$_SESSION[name]','$_SESSION[lname]','$_SESSION[phone]')";
 	 if (mysqli_query($conn, $sql)) {
-		echo "New record created successfully !";
+		echo "<script>
+	alert('تمت اضافة استراحة');
+	window.location.href='../html/index.php';
+	</script>";
 	 } else {
 		echo "Error: " . $sql . "
 " . mysqli_error($conn);

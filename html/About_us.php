@@ -21,7 +21,7 @@
       <div class="container">
         <h2>عبدالرحمن المطيري</h2>
         <p class="title">CEO & Founder</p>
-        <p> ومساعد php</p>
+        <p> php مساعد sql</p>
         <p>tvtc@example.com</p>
        
       </div>
