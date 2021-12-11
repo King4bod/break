@@ -30,19 +30,23 @@ session_start();
           $data = $stmt_result->fetch_assoc();
 
        if($data['password']=== md5($password)){
-		header("Location: ../html/index.php");
-  //  echo "<h1> Your First name is : </h1>" . $_SESSION["name"] ."<br>" ;
+        echo "<script>
+        window.location.href='../html/index.php';
+        </script>";   //  echo "<h1> Your First name is : </h1>" . $_SESSION["name"] ."<br>" ;
    // echo "<h1>Your Last name is  : </h1>" . $_SESSION["last"]  ;
 
         
        
       } else {
+        session_destroy();
         echo "<script>
         alert('حدث خطأ البريد الألكتروني غير صحيح او كلمة المرور');
         window.location.href='../html/Break-login.php';
         </script>";     }
-    } else { 	echo "<script>
-      alert('حدث خطأ البريد الألكتروني غير صحيح او كلمة المرور');
+    } else { 	
+      session_destroy();
+      echo "<script>
+      alert('لا يوجد لديك بيانات');
       window.location.href='../html/Break-login.php';
       </script>";
     }

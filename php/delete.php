@@ -10,7 +10,10 @@ $result= mysqli_query($conn, $query);
 if($result)
 {
 
-    header('Location: ../html/index.php');
+    echo "<script>
+    alert('تم المسح');
+    window.location.href='../html/index.php';
+    </script>";
     exit();
 }
 else
