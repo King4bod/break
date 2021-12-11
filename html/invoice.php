@@ -32,13 +32,13 @@
                {   
           
         
-                     echo "Break id =".$data['break_id'].'<br>';
+                     
                      echo "Break name :".$data['break_name'].'<br>';
                      echo "Break price =".$data['price'].'<br>';
                      echo "Break location :".$data['location'].'<br>';
                      echo "Start date =".$data['start_date'].'<br>';
                      echo "End date =".$data['end_date'].'<br>';
-                     echo "Your id =".$data['owner_id'].'<br>';
+                     
                      ?>
             <form action="" method="post">
             <button type="submit"  name="<?php echo $data['break_name'] ?>" class="button">Cancel</button>
