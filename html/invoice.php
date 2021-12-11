@@ -33,11 +33,11 @@
           
         
                      
-                     echo "Break name :".$data['break_name'].'<br>';
-                     echo "Break price =".$data['price'].'<br>';
-                     echo "Break location :".$data['location'].'<br>';
-                     echo "Start date =".$data['start_date'].'<br>';
-                     echo "End date =".$data['end_date'].'<br>';
+                     echo "Break name :".$data['break_name'].'<br>'.'<br>';
+                     echo "Break price =".$data['price'].'<br>'.'<br>';
+                     echo "Break location :".$data['location'].'<br>'.'<br>';
+                     echo "Start date =".$data['start_date'].'<br>'.'<br>';
+                     echo "End date =".$data['end_date'].'<br>'.'<br>';
                      
                      ?>
             <form action="" method="post">
