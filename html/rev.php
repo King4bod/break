@@ -32,16 +32,10 @@ if (!isset($_SESSION['name'])) {
 
 <?php  ?>
 
-    
-
-     
-
-           
-         
-<label>Choose your preferred party date:
+<label>قم بأختيار بداية التاريخ  
     <input type="date" name="date1" min="2017-04-01" max="2017-04-30">
   </label>
-  <label>Choose your preferred party date:
+  <label>قم بأختيار نهاية التاريخ 
     <input type="date" name="date2" min="2017-04-01" max="2017-04-30">
   </label>
                 <br>
@@ -51,7 +45,7 @@ if (!isset($_SESSION['name'])) {
           <?php
       ?>
 
-     
+    </div>
 
  
           </body>

@@ -66,6 +66,8 @@
   {
   if($data['type']=== "Owner"){
   echo '<li  class="nav-item"><a href="../html/my_break.php">My Break</a></li>';
+  echo '<li  class="nav-item"><a href="../html/my_reservation.php">My Reservation</a></li>';
+
 
 } else {
          echo '<li  class="nav-item"><a href="../html/my_reservation.php">My Reservation</a></li>';
