@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
     <title>Reservation</title>
-<?php include "header.php";?>
+<?php include "header.php";
+if (!isset($_SESSION['name'])) {
+  echo "<script>
+  alert('يجب حساب للحجز ');
+  window.location.href='../html/Break-login.php';
+  </script>";
+}?>
    
 <link rel="stylesheet" href="../css/add.css">
   <body>
