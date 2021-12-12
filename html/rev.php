@@ -40,7 +40,7 @@ if (!isset($_SESSION['name'])) {
     <input type="date" name="date2" min="2017-04-01" max="2017-04-30">
   </label><br><br>
                 <br>
-                <button type="submit" class="button"  >submit</button>
+                <button type="submit" class="button"  >ارسال</button>
                 
 
             </form> 

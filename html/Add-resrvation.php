@@ -25,7 +25,7 @@
   <!--<div class="row row-cols-1 row-cols-md-3 g-4">  <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > <img src="../image/b1.png" width="150px" height="150px" class="logo-icon" > </div>
 -->
 
-                <label for="break_name"class="form-label"> Break name</label> 
+                <label for="break_name"class="form-label">أسم الأستراحة</label> 
                 <input class="form-control"
                   type="text"
                   id="break_name"
@@ -33,7 +33,7 @@
                   placeholder="break_name"
                   />
                
- <label name="Location" id ="Search2" class="form-label">Location </label> 
+ <label name="Location" id ="Search2" class="form-label">الموقع </label> 
 
                   <select  class="form-select "name="Location" id="Location">
                    <option value="alriath">الرياض</option>
@@ -43,7 +43,7 @@
                    </select>
            
          
-                <label for="Price"class="form-label"> Price per day </label>
+                <label for="Price"class="form-label">السعر باليوم</label>
                 <input type="number" class="form-select "
    
                   type="text"
@@ -51,7 +51,7 @@
                   name="Price"
                 />
               
-                <label for="Number"class="form-label"> Phone number </label> 
+                <label for="Number"class="form-label">رقم الجوال</label> 
                 <input class="form-control"
                   type="text"
                   id="Number"
@@ -64,7 +64,7 @@
  <input type="file" name="image3" >
  <input type="file" name="image4" >
                
-                <input type='submit' name='submit' value='Upload' class="button">
+                <input type='submit' name='submit' value='ارسال' class="button">
 
             </form> 
  

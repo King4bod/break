@@ -36,7 +36,7 @@ include "../html/header.php";
     <img src="../image/break 44.png"class="img">
             
             <form action="" method="post">
-                <label for="email "class="form-label">Name </label> 
+                <label for="email "class="form-label">أسم الأستراحة </label> 
                 <input class="form-control"
                   type="text"
                  class="box"
@@ -46,7 +46,7 @@ include "../html/header.php";
                   />
                   <br>
                 
-                  <label name="Search2" id ="Search2" class="form-label">Location </label> 
+                  <label name="Search2" id ="Search2" class="form-label">الموقع </label> 
     <img src="../image/ico.png"  class="shr" >
    
 
@@ -57,7 +57,7 @@ include "../html/header.php";
                    <option value="jazan">جازان</option>
                    </select>
                    <br>
-                   <button type="submit" name="submit" class="button">submit</button>
+                   <button type="submit" name="submit" class="button">ارسال</button>
                    <br>                    <br>
                    <br>
 
