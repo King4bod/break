@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>  
-   <link rel="stylesheet" href="../css/log-reg.css">
+   
 <?php  include "header.php";?>
+<link rel="stylesheet" href="../css/log-reg.css">
 <title>Register</title>
 
  <!--
@@ -30,7 +31,7 @@
 
 
    
-    <h1> New Account </h1>
+    <h1> انشاء حساب </h1>
     <article style="display: flex; justify-content: center; margin-top: 30px;"> 
     <div class="warning">
      <!--<div class="container">--> 
@@ -38,7 +39,7 @@
       <form action="../php/Register.php" method="post">
        <img src="../image/break 44.png" width="150px" height="150px" class="img" >
        <br> 
-       <label for="firstName"  class="form-label">  First name  </label> <!--الاسم الاول-->
+       <label for="firstName"  class="form-label">  الأسم الأول  </label> <!--الاسم الاول-->
                 <input
            
                 type="text"
@@ -49,7 +50,7 @@
                  
                   />
                
-                <label for="lastName" class="form-label">Last name</label> <!--الأسم الأخير-->
+                <label for="lastName" class="form-label">الأسم الأخير</label> <!--الأسم الأخير-->
                 <input
                   type="text"
                   class="form-control"
@@ -58,7 +59,7 @@
                   placeholder="your lastName"
                   />
                 
-                <label for="type" class="form-label">Type</label> 
+                <label for="type" class="form-label">نوع الحساب</label> 
                 
                 <select  name ="type" class="form-select" id="floatingSelect" aria-label="Floating label select example" >
                   <option selected>Account type</option>
@@ -70,7 +71,7 @@
    
                 <label for="floatingSelect"  class="form-label"></label>
             
-                <label for="email"  class="form-label">Email</label> <!--البريد الألكتوني-->
+                <label for="email"  class="form-label">البريد الألكتروني</label> <!--البريد الألكتوني-->
                 <img  src="../image/email.png" width="30px" height="30px" class="email" >
                 <input class="form-control"
                   type="text"
@@ -81,7 +82,7 @@
                
                 
 
-                <label for="password"  class="form-label">Password</label> <!--كلمة المرور-->
+                <label for="password"  class="form-label">كلمة المرور</label> <!--كلمة المرور-->
                 <img  src="../image/key.png" width="30px" height="30px" class="key" >
                 <input class="form-control"
                   type="password"
@@ -92,7 +93,7 @@
                   />
                
            
-                <label for="number" class="form-label">Phone number</label> <!--رقم الجوال-->
+                <label for="number" class="form-label">رقم الهاتف</label> <!--رقم الجوال-->
                 <img  src="../image/phone.png" width="30px" height="30px" class="phone" >
                 <input class="form-control"
                   type="number"
@@ -101,7 +102,7 @@
                   placeholder="+966 5..."
                   />
                 <br>
-                <button type="submit" class="button">submit</button>
+                <button type="submit" class="button">ارسال</button>
 
             </form> 
           </div>
