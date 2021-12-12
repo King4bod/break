@@ -11,12 +11,12 @@
  
       
 
-  <h1> Update-resravtion</h1>
+  <h1>تحديث الاستراحة</h1>
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
  
   <div class="warning">
             <form action="../php/update.php" method="post">
-  <label name="mybreak"  class="form-label">your break </label>
+  <label name="mybreak"  class="form-label">اختيار استراحة </label>
                 <select name="mybreak">        
          <?php  include "../php/connect.php";
            $records = mysqli_query($conn,"select break_name from break  where owner_id=".$_SESSION['id'].""); // fetch data from database
@@ -26,14 +26,14 @@
                 <?php
       }  ?>     </select>
       <br>
-                <label for="break_name"class="form-label"> Break name</label> 
+                <label for="break_name"class="form-label"> اسم الاستراحة</label> 
                 <input class="form-control"
                   type="text"
                   id="break_name"
                   name="break_name"
                 />
                
-                <label name="Location" id ="Location" class="form-label">Location </label> 
+                <label name="Location" id ="Location" class="form-label">الموقع </label> 
 
 <select  class="form-select" name="Location" id="Location">
                   <option value="alriath">الرياض</option>
@@ -42,14 +42,14 @@
                    <option value="jazan">جازان</option>
     </select>
          
-                <label for="Price"class="form-label"> Price per day </label>
+                <label for="Price"class="form-label"> السعر باليوم </label>
                 <input class="form-control"
                   type="text"
                   id="Price"
                   name="Price"
                 />
               
-                <label for="Number"class="form-label"> Phone number </label> 
+                <label for="Number"class="form-label"> رقم الجوال </label> 
                 <input class="form-control"
                   type="text"
                   id="Number"
@@ -57,7 +57,7 @@
                   
                 />
                 <br>                
-                <button type="submit" class="button">submit</button>
+                <button type="submit" class="button">ارسال</button>
 
             </form> 
  

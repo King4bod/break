@@ -41,7 +41,7 @@
                      
                      ?>
             <form action="" method="post">
-            <button type="submit"  name="<?php echo $data['break_name'] ?>" class="button">Cancel</button>
+            <button type="submit"  name="<?php echo $data['break_name'] ?>" class="Delete">الغاء</button>
 
                </form> 
                      <?php

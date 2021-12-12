@@ -22,7 +22,7 @@
  
   <div class="warning">
             <form action="../php/delete.php" method="post">
-  <label name="mybreak"  class="form-label">your break </label>
+  <label name="mybreak"  class="form-label">استراحتك </label>
                 <select name="mybreak">        
          <?php  include "../php/connect.php";
            $records = mysqli_query($conn,"select break_name from break  where owner_id=".$_SESSION['id'].""); // fetch data from database
