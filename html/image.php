@@ -16,15 +16,16 @@
   <div class="warning">
   <form method='post' action='../php/image.php' enctype='multipart/form-data'>
  <?php include "../php/connect.php";
-    $img = mysqli_query($conn, "SELECT image,image2,image3,image4 FROM break where owner_id=".$_SESSION['id']."");
+    $img = mysqli_query($conn, "SELECT break_name,image,image2,image3,image4 FROM break where owner_id=".$_SESSION['id']."");
        while ($row = mysqli_fetch_array($img)) {     
         
-
+        echo $row['break_name']." صور ";
+        echo "<br>"; 
         echo "<img src='../image/".$row['image']."' style='width:50px;height:50px;' >";
           echo "<img src='../image/".$row['image2']."' style='width:50px;height:50px;' >";   
           echo "<img src='../image/".$row['image3']."' style='width:50px;height:50px;' >";   
           echo "<img src='../image/".$row['image4']."' style='width:50px;height:50px;' >";   
-
+          echo "<br>";
       } 
 ?> 
   <label name="mybreak"  class="form-label">your break </label>
