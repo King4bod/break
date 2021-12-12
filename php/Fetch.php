@@ -22,18 +22,29 @@ $conn = new mysqli('localhost','root','','mydatabase');
           <div class="card-body">
             <h5 class="card-title"><?php echo $data[1]; ?></h5>
           
-          <p class="card-text"> <?php
+         
         
-        echo "Break name :";
-        echo $data[1].'<br>';
-        echo "Location ";
-        echo $data[2].'<br>';
-        echo "Price$ :"; 
-        echo $data[3].'<br>';
-        echo "phone number :" ;
-        echo $data[4].'<br>'; 
+     <!--  echo "Break name :";
+       // echo $data[1].'<br>';
+       // echo "Location ";
+       // echo $data[2].'<br>';
+       // echo "Price$ :"; 
+       // echo $data[3].'<br>';
+       // echo "phone number :" ;
+       // echo $data[4].'<br>'; 
+      -->
+       <p class="card-text"> <?php
+                echo $data[1];
+        echo ":اسم الأستراحة" .'<br>';
+        echo $data[2];
+        echo " :الموقع" .'<br>';
+        echo $data[3];
+        echo " :السعر" .'<br>';
+        echo $data[4]; 
+        echo " :رقم الجوال" .'<br>';
+
        ?> </p> 
-     <p>
+            <p>
  <form action="../html/rev.php">
  <button type="submit" class="button">حجز</button>
  </form>

@@ -56,21 +56,21 @@
          ?>
          </p></li> 
          <li class="nav-item">
-    <a class="active" href="../html/Search.php">Search</a>  </li>
+    <a class="active" href="../html/Search.php">بحث</a>  </li>
 
     <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
-        echo '<a class="nav-link" href="../php/Logout.php">Log out</a>';
+        echo '<a class="nav-link" href="../php/Logout.php">تسجيل الخروج </a>';
    include "../php/connect.php";
     $records = mysqli_query($conn,"select type from users where users_id = '$_SESSION[id]'"); // fetch data from database
     while($data = mysqli_fetch_array($records))
   {
   if($data['type']=== "Owner"){
-  echo '<li  class="nav-item"><a href="../html/my_break.php">My Break</a></li>';
-  echo '<li  class="nav-item"><a href="../html/my_reservation.php">My Reservation</a></li>';
+  echo '<li  class="nav-item"><a href="../html/my_break.php">استراحاتي </a></li>';
+  echo '<li  class="nav-item"><a href="../html/my_reservation.php">حجوزاتي</a></li>';
 
 
 } else {
-         echo '<li  class="nav-item"><a href="../html/my_reservation.php">My Reservation</a></li>';
+         echo '<li  class="nav-item"><a href="../html/my_reservation.php">حجوزاتي</a></li>';
 
 }
 }
@@ -79,8 +79,8 @@
       //  echo '<li  class="nav-item"><a href="../html/my_reservation.php">My Reservation</a></li>';
 
     } else {
-      echo '<a class="nav-link" href="../html/Break-login.php">Login</a></li>';
-      echo '<li  class="nav-item"><a href="../html/Break-register.php">Register</a></li> ';
+      echo '<a class="nav-link" href="../html/Break-login.php">تسجيل الدخول</a></li>';
+      echo '<li  class="nav-item"><a href="../html/Break-register.php">تسجيل حساب جديد</a></li> ';
     }
    
 
