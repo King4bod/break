@@ -32,23 +32,39 @@
                {   
           
         
-                     echo "Break id =".$data['break_id'].'<br>';
-                     echo "Break name :".$data['break_name'].'<br>';
-                     echo "Break price =".$data['price'].'<br>';
-                     echo "Break location :".$data['location'].'<br>';
-                     echo "Start date =".$data['start_date'].'<br>';
-                     echo "End date =".$data['end_date'].'<br>';
-                     echo "Your id =".$data['owner_id'].'<br>';
+                     
+                     echo "Break name :".$data['break_name'].'<br>'.'<br>';
+                     echo "Break price =".$data['price'].'<br>'.'<br>';
+                     echo "Break location :".$data['location'].'<br>'.'<br>';
+                     echo "Start date =".$data['start_date'].'<br>'.'<br>';
+                     echo "End date =".$data['end_date'].'<br>'.'<br>';
+                     
+                     ?>
+            <form action="" method="post">
+            <button type="submit"  name="<?php echo $data['break_name'] ?>" class="button">Cancel</button>
+
+               </form> 
+                     <?php
                      echo '-----------------------------';
+                     if (isset($_POST[$data['break_name']])) {
+               $query= " DELETE FROM reservations where owner_id='".$_SESSION['id']."' AND break_name='".$data['break_name']."'";  
+               $result= mysqli_query($conn, $query);
+
+               if($result)
+{
+    echo "<script>
+    alert('تم حذف الحجز');
+    window.location.href='../html/invoice.php';
+    </script>";
+}
+                     }
+                   
+               
                }
-              }    else {
-                    echo "No reservations";
+              } else {
+                echo "No resrvation";
               }
-        /*<form>
-          <label>Choose your preferred party date:
-           <input type="date" name="party" min="2017-04-01" max="2017-04-30">
-           </label>
-           </form>  */
+      
                 ?>
 
               </p> 
@@ -61,4 +77,4 @@
 </article>
 <br> <br> <br> <br> <br> <br><br> <br> <br> 
 <?php include "../html/footer.php"?>
-</html>                   
+</html>

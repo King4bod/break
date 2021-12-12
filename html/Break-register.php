@@ -64,7 +64,7 @@
                 <select  name ="type" class="form-select" id="floatingSelect" aria-label="Floating label select example" >
                   <option selected>Account type</option>
                   <option  value="Client">Client</option>
-                  <option  value="lessor">lessor</option>
+                  <option  value="Owner">Owner</option>
               
                 </select>
             

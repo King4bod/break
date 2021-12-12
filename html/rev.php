@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
     <title>Reservation</title>
-<?php include "header.php";?>
+<?php include "header.php";
+if (!isset($_SESSION['name'])) {
+  echo "<script>
+  alert('يجب حساب للحجز ');
+  window.location.href='../html/Break-login.php';
+  </script>";
+}?>
    
 <link rel="stylesheet" href="../css/add.css">
-  <body>
+  <body style="text-align: center">
  
  
       
 
-  <h1> Update-resravtion</h1>
+  <h1> Update-resravtion</h1>  <br><br><br><br>
   <article style="display: flex; justify-content: center; margin-top: 30px;"> 
   <div class="warning">
 <form action="../php/rev.php" method="post">
@@ -22,30 +28,26 @@
                   <option value="<?php echo $data[0];?>"><?php echo $data[0];?></option>
                 <?php
       }  ?>     </select>
-      <br>
+      <br><br>
 
 <?php  ?>
 
-    
-
-     
-
-           
-         
-<label>Choose your preferred party date:
+<label>قم بأختيار بداية التاريخ  
     <input type="date" name="date1" min="2017-04-01" max="2017-04-30">
-  </label>
-  <label>Choose your preferred party date:
+
+  </label><br><br>
+  <label>قم بأختيار نهاية التاريخ
     <input type="date" name="date2" min="2017-04-01" max="2017-04-30">
-  </label>
+  </label><br><br>
                 <br>
-                <button type="submit" class="button">submit</button>
+                <button type="submit" class="button"  >submit</button>
+                
 
             </form> 
           <?php
       ?>
 
-     
+    </div>
 
  
           </body>
