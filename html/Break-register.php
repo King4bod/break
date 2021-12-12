@@ -47,7 +47,7 @@
                   id="firstName"
                   name="firstName"
                   placeholder="your Name"
-                 
+                  maxlength="10"
                   />
                
                 <label for="lastName" class="form-label">الأسم الأخير</label> <!--الأسم الأخير-->
@@ -89,17 +89,18 @@
                   id="password"
                   name="password"
                   placeholder="password"
-               
+
                   />
                
            
                 <label for="number" class="form-label">رقم الهاتف</label> <!--رقم الجوال-->
                 <img  src="../image/phone.png" width="30px" height="30px" class="phone" >
                 <input class="form-control"
-                  type="number"
+                  type="tel"
                   id="number"
                   name="number"
                   placeholder="+966 5..."
+                  maxlength="10"
                   />
                 <br>
                 <button type="submit" class="button">ارسال</button>
