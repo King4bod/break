@@ -18,7 +18,7 @@ require 'connect.php';
 			";
 	$result= mysqli_query($conn, $query);
 
-	if( !$result){
+	if( $result){
 		echo "<script>
 		alert('تم تحديث المعلومات  ');
 		window.location.href='../html/update.php';
