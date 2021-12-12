@@ -61,7 +61,7 @@ border-style: solid;
   border: none;
   border-radius: 10px;
   box-shadow: 0 9px rgb(151, 88, 4);
-  text-indent: 40px;
+  text-indent: 10px;
 }
 
 .button:hover {background-color: #3b2c01}
