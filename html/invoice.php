@@ -40,6 +40,11 @@
                      echo "End date =".$data['end_date'].'<br>'.'<br>';
                      
                      ?>
+            <form action="../html/update_rev.php" method="post">
+            <button type="submit"  name="<?php echo $data['break_name'] ?>" class="button">تعديل</button>
+
+               </form> 
+               <br>
             <form action="" method="post">
             <button type="submit"  name="<?php echo $data['break_name'] ?>" class="Delete">الغاء</button>
 
