@@ -47,7 +47,17 @@
 
   
     <li class="nav-item"><p style="color:white"> 
-          <?php  if (isset($_SESSION['name'])) {
+          <?php session_start();
+          if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1800)) {
+            // last request was more than 30 minutes ago
+            session_unset();     // unset $_SESSION variable for the run-time 
+            session_destroy();   // destroy session data in storage
+            echo "<script>
+            alert('لم تفعل شيئا خلال 30 دقيقة الماضية انتهت جلستك');
+            </script>";
+        }
+        $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
+           if (isset($_SESSION['name'])) {
         //echo "Hello Tariq";
         echo  "Welcome ".$_SESSION['name'];
          } else {
@@ -58,7 +68,7 @@
          <li class="nav-item">
     <a class="active" href="../html/Search.php">بحث</a>  </li>
 
-    <li class="nav-item"> <?php session_start(); if (isset($_SESSION['name'])) {
+    <li class="nav-item"> <?php  if (isset($_SESSION['name'])) {
         echo '<a class="nav-link" href="../php/Logout.php">تسجيل الخروج </a>';
    include "../php/connect.php";
     $records = mysqli_query($conn,"select type from users where users_id = '$_SESSION[id]'"); // fetch data from database
