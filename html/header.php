@@ -92,11 +92,13 @@
       echo '<a class="nav-link" href="../html/Break-login.php">تسجيل الدخول</a></li>';
       echo '<li  class="nav-item"><a href="../html/Break-register.php">تسجيل حساب جديد</a></li> ';
     }
-   
+      
 
     ?>
+    
 
          <li class="nav-item">
+         <a class="active" href="../html/qr.php">QR</a>  </li>
 
 
         

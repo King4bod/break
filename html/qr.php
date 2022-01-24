@@ -2,7 +2,7 @@
 
 
 include '../phpqrcode/qrlib.php';
-$text = " PRODUCT ID 23456";
+$text = " نجح";
 
 QRcode::png($text);
 
