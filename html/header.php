@@ -97,8 +97,7 @@
     ?>
     
 
-         <li class="nav-item">
-         <a class="active" href="../html/qr.php">QR</a>  </li>
+
 
 
         
